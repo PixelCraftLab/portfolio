@@ -16,7 +16,7 @@ const HeroText = () => {
                     A Developer<br/> Dedicated to Crafting
                     </p>
                 <p id="flipwords" 
-                className="text-5xl font-semibold text-neutral-200">
+                className="text-5xl font-semibold text-neutral-100">
                     <FlipWords />
 
 
