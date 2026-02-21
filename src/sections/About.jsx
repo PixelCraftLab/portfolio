@@ -1,0 +1,75 @@
+import CopyEmailButton from "../components/CopyEmailButton"
+import {Frameworks} from "../components/Framework"
+
+export const About = () => {
+  return (
+    <section className="c-space section-spacing">
+        <h2 className="text-heading">About Me</h2>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
+
+            <div className="relative grid-default-color grid-1 flex flex-col justify-end">
+                <img
+                src="assets/coding-pov.png"
+                className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5]"
+                />
+                <div className="z-10">
+                    <p className="headtext">Hi, I am Vishal</p>
+                    <p className="subtext">Over the last few months, I developed frontend dev skills along with backend basics to deliver dynamic and softwaer and web application</p>
+
+                </div>
+            </div>
+            <div className="grid-default-color grid-2">
+                <div className="flex items-center justify-center w-full h-full">
+                    <p className="flrx iteams-end text-5xl text-gray-500">
+                        In love with this guys
+                    </p>
+                    <img src="assets/logos/css3.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    <img src="assets/logos/html5.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    <img src="assets/logos/javascript.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    <img src="assets/logos/react.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    <img src="assets/logos/visualstudiocode.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    <img src="assets/logos/vitejs.svg" className="w-12 h-12 md:w-16 md:h-16" />
+
+                </div>
+                
+
+            </div>
+            <div className="grid-default-color grid-3">
+                <div className="z-10 w-[50%]">
+                    <p className="headtext">Time Zone</p>
+                    <p className="subtext">I'm based in India, and opean to work worldwide</p>
+
+
+                </div>
+            <figure className="absalute left-[30%] top-[10%]">
+                {/* <Globe/> */}
+            </figure>
+
+            </div>
+            <div className="grid-special-color grid-4">
+                <div className="flex flex-col items-center justify-center gap-4 size-full">
+                    <p className="text-center headtext">Do you ant to start a project together?</p>
+                    <CopyEmailButton/>
+
+                </div>
+
+            </div>
+            <div className="grid-default-color grid-5">
+                <div className="z-10 w-[50%]">
+                    <p className="headText">Tech Stak</p>
+                    <p className="subtext">
+                        I specialize in a variety of languages, framewrks , and tools that allow me to build scalable applications
+                    </p>
+                    
+                </div>
+                <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
+                    <Frameworks/>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+  )
+}
