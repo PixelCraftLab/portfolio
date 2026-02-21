@@ -8,6 +8,10 @@ const HeroText = () => {
     rounded-3xl bg-clip-text">
         {/* DesktopViews */}
         <div className="flex-col  md:flex c-space">
+            <h1 className="text-7xl font-medium mb-5 text-blue-200">
+                Welcome to My World!
+            </h1>
+            
             <h1 className="text-4xl font-medium">
                 Hi, there I'm Vishal Kumar Gowad
             </h1>
