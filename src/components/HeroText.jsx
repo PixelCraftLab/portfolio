@@ -24,7 +24,7 @@ const HeroText = () => {
                     <FlipWords />
 
 
-                    {/* <div> get flip word from js </div> */}
+                    
                 </p>
                 <p className="text-4xl font-medium text-neutral-300 ">
                     Web Solutions 
