@@ -37,36 +37,9 @@ export const myProjects = [
       },
     ],
   },
+  
   {
     id: 2,
-    title: "MediConnect",
-    description:
-      "A healthcare-focused application built for Microsoft Imagine Cup that advanced to the SharkPool investment round, showcasing real-world impact and strong business potential.",
-    subDescription: [
-  "Led end-to-end development of MediConnect, a healthcare app built for Microsoft Imagine Cup that advanced to the SharkPool investment round.",
-  "Served as Technical and Product Lead in a two-member team, independently handling architecture, core development, workflow design, and system planning over 3 months.",
-  "Identified key gaps in the medical industry and translated them into actionable, market-ready solutions with strong ownership and analytical thinking.",
-  "Built and validated the MVP demonstrating real-world impact and business potential.",
-],
-    href: "https://my-imagine-cup.vercel.app/",
-    logo: "",
-    image: "/assets/projects/MediConnectimg.png",
-    tags: [
-      {
-        id: 1,
-        name: "A startup initiative reflecting practical problem-solving skills and the ability to turn real-world challenges into scalable solutions.",
-        
-      },
-      {
-        id: 2,
-        name: "#Microsoft",
-        
-      },
-      
-    ],
-  },
-  {
-    id: 3,
     title: "TODO's App",
     description:
       "A modern, animated to-do app featuring a beautifully decorated UI/UX that makes task management smooth, engaging, and enjoyable.",
@@ -103,7 +76,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     title: "Tic Tac Toe",
     description:
   "An interactive Tic-Tac-Toe game built with efficient game logic and responsive design.",
@@ -141,7 +114,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     title: "WeatherSync",
     description:
   "A real-time weather synchronization app that provides accurate forecasts and location-based weather updates.",
@@ -176,6 +149,38 @@ export const myProjects = [
         name: "REST API",
         path: "/assets/logos/vitejs.svg",
       },
+    ],
+  },
+  {
+    id: 5,
+    title: "MediConnect",
+    description:
+      "A healthcare-focused application built for Microsoft Imagine Cup that advanced to the SharkPool investment round, showcasing real-world impact and strong business potential.",
+    subDescription: [
+  "Led end-to-end development of MediConnect, a healthcare app built for Microsoft Imagine Cup that advanced to the SharkPool investment round.",
+  "Served as Technical and Product Lead in a two-member team, independently handling architecture, core development, workflow design, and system planning over 3 months.",
+  "Identified key gaps in the medical industry and translated them into actionable, market-ready solutions with strong ownership and analytical thinking.",
+  "Built and validated the MVP demonstrating real-world impact and business potential.",
+],
+    href: "https://my-imagine-cup.vercel.app/",
+    logo: "",
+    image: "/assets/projects/MediConnectimg.png",
+    tags: [
+      {
+        id: 1,
+        name: "A startup initiative reflecting practical problem-solving skills and the ability to turn real-world challenges into scalable solutions.",
+        
+      },
+      {
+        id: 2,
+        name: "#Microsoft",
+        
+      },
+      {
+        id: 3,
+        name: "#Prompt Engineering Skills",
+      }
+      
     ],
   },
   
