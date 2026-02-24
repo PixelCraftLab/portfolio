@@ -17,9 +17,9 @@ function FlipWords() {
       setCurrentWordIndex((prevIndex) =>
         (prevIndex + 1) % words.length
       );
-    }, 1500);
+    }, 2100);
 
-    return () => clearInterval(interval); // cleanup
+    return () => clearInterval(interval); 
   }, []);
 
   return (
