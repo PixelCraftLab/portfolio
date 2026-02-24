@@ -24,10 +24,7 @@ const ProjectDetails = ({
                 <h5 className='mb-2 text-2xl font-bold text-white'>{title}</h5>
                 <p className='mb-3 font-normal text-neutral-400'>{description}</p>
                 <p className='mb-3 font-normal text-neutral-400'>{subDescription}</p>
-                <p className='h-10'></p>
-                <p className='h-10'></p>
-                <p className='h-10'></p>
-                <p className='h-10'></p>
+                
             
             {/* <div className='flrx items-center justify-between mt-4'></div> */}
             <a className='inline-flex items-center gap-1 font-medium hover:animation cursor-pointer'  href={href}>View Project
