@@ -20,7 +20,7 @@ const Project = ({title, description, subDescription, href, image,tags}) => {
     <button onClick={()=>setIsHidden(true)} className='flex iteams-center gap-1 cursor-pointer hover-animation'>
         Read More 
         <img src='assets/arrow-right.svg' 
-        className='w-5'
+        className='w-5 cursor-pointer'
         />
 
     </button>
