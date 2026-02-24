@@ -11,7 +11,7 @@ const ParallaxBackground = () => {
     <section className="absolute inset-0 bg-black/40">
       <div className="relative h-screen overflow-hidden">
 
-        {/* background sky */}
+        
         <div
           className="absolute inset-0 w-full h-screen -z-50"
           style={{
@@ -21,7 +21,7 @@ const ParallaxBackground = () => {
           }}
         />
 
-         {/* mountains layer 3 */}   
+          
         
         <motion.div
           className="absolute inset-0  -z-40"
@@ -34,7 +34,7 @@ const ParallaxBackground = () => {
         />
 
 
-        {/* planets  */} 
+      
         <motion.div
           className="absolute inset-0  -z-30"
           style={{
@@ -45,7 +45,7 @@ const ParallaxBackground = () => {
           }}
         />
 
-        {/* mountains layer 2 */}
+      
         <motion.div 
           className="absolute inset-0  -z-20"
           style={{
@@ -56,7 +56,7 @@ const ParallaxBackground = () => {
           }}
         />
 
-        {/* mountains layer 1 */}
+        
         <motion.div
           className="absolute inset-0  -z-10"
           style={{
