@@ -18,7 +18,7 @@ const CopyEmailButton = () => {
     }
   return (
     <button onClick={copytoclipboard}
-    className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[15rem] cursor-pointer overflow-hidden hover:scale-105 transition-transform duration-300">
+    className="relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[15rem] cursor-pointer overflow-hidden hover:scale-105 transition-transform duration-300 flex justify-center ">
         <p className="flex items-center justify-center gap-2">
         Copy Email address</p>
         <img 
