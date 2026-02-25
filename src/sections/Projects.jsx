@@ -3,16 +3,20 @@ import Project from "../components/Project"
 import { motion, useMotionValue, useSpring } from "framer-motion"
 import { useState } from "react";
 
-
+let frame;
 const Projects = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const springX = useSpring(x,{damping:10, stiffness:50});
   const springY = useSpring(y,{damping:10, stiffness:50});
-  const handleMouseMove=(e)=>{
-    x.set(e.clientX+20);
-    y.set(e.clientY+20);
-  }
+  const handleMouseMove = (e) => {
+  if (frame) return;
+  frame = requestAnimationFrame(() => {
+    x.set(e.clientX + 20);
+    y.set(e.clientY + 20);
+    frame = null;
+  });
+};
 
   const [preview, setPreview]= useState(null);
 
