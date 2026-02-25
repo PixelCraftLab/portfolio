@@ -14,7 +14,7 @@ export const About = () => {
                 />
                 <div className="z-10">
                     <p className="headtext">Hi, I am Vishal</p>
-                    <p className="subtext">Over the last few months, I developed frontend dev skills along with backend basics to deliver dynamic and softwaer and web application</p>
+                    <p className="subtext">Over the last few months, I developed frontend dev skills along with backend basics to deliver dynamic and software and web application</p>
 
                 </div>
             </div>
