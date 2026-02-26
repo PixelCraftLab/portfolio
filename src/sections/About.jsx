@@ -108,9 +108,17 @@ export const About = () => {
 
 
                 </div>
-            <figure className="absalute left-[30%] top-[10%]">
-                {/* <Globe/> */}
-            </figure>
+            
+                <figure className="absolute left-95 top-30 transform -translate-x-1/2 -translate-y-1/4 animate-pulse">
+                    <motion.img 
+                        src="/assets/projects/FloatingPlanet.png" 
+                        alt="Time Zone Illustration"
+                        className="w-132 h-132 md:w-48 md:h-48 lg-w-96 lg-h-96 object-contain"
+                        animate={{ y: [0, -30, 0] }}    
+                        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                    />
+                
+                </figure>
 
             </motion.div>
             <motion.div className="grid-special-color grid-4"
