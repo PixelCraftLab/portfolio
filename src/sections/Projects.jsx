@@ -21,6 +21,13 @@ const Projects = () => {
 
   return (
     <section onMouseMove={handleMouseMove} className="relative c-space section-spacing ">
+
+      {/* <img
+            src="/assets/projects/StarssImgg.png"   
+            alt="stars"
+            className="absolute inset-0 w-full h-full object-cover z-10 animate-pulse"
+        /> */}
+
         <h2 className="text-heading">My Projects</h2>
         <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/>
         {myProjects.map((project)=>(<Project key={project.id}{...project} setPreview={setPreview}/>))}

@@ -27,7 +27,14 @@ const cardVariants = {
 
 export const About = () => {
   return (
-    <section className="c-space section-spacing">
+    <section className="relative c-space section-spacing overflow-hidden">
+
+        <img
+            src="/assets/projects/StarsImg.png"   
+            alt="stars"
+            className="absolute inset-0 w-full h-full object-cover z-10 animate-pulse"
+        />
+        
         <h2 className="text-heading">About Me</h2>
         <motion.div
             className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
