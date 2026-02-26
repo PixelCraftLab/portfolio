@@ -11,7 +11,7 @@ const ParallaxBackground = () => {
 const imageX = useTransform(
   scrollYProgress,
   [0, 0.5],
-  ["0%", "80%"]   
+  ["0%", "100%"]   
 
 );
 
