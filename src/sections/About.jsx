@@ -35,7 +35,15 @@ export const About = () => {
             className="absolute inset-0 w-full h-full object-cover z-10 animate-pulse"
         />
         
-        <h2 className="text-heading ">About Me</h2>
+        <motion.h2
+            className="text-heading"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.5 }}
+            >
+            About Me
+        </motion.h2>
         <motion.div
             className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
             initial="hidden"
