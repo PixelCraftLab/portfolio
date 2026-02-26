@@ -35,7 +35,7 @@ export const About = () => {
             className="absolute inset-0 w-full h-full object-cover z-10 animate-pulse"
         />
         
-        <h2 className="text-heading">About Me</h2>
+        <h2 className="text-heading ">About Me</h2>
         <motion.div
             className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
             initial="hidden"
