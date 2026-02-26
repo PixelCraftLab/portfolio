@@ -1,13 +1,55 @@
 import CopyEmailButton from "../components/CopyEmailButton"
 import {Frameworks} from "../components/Framework"
+import { motion } from "framer-motion"
+
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    y: 80,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1.2,
+      ease: "easeOut"
+    }
+  }
+};
+
+
+
+
+
+
+
+
 
 export const About = () => {
   return (
     <section className="c-space section-spacing">
         <h2 className="text-heading">About Me</h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
+        <motion.div
+            className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+                visible: {
+                transition: {
+                    staggerChildren: 1.2
+                }
+                }
+            }}
+            >
 
-            <div className="relative grid-default-color grid-1 flex flex-col justify-end">
+            <motion.div className="relative grid-default-color grid-1 flex flex-col justify-end"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+
+            >
                 <img
                 src="assets/coding-pov.png"
                 className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5]"
@@ -17,8 +59,13 @@ export const About = () => {
                     <p className="subtext">Over the last few months, I developed frontend dev skills along with backend basics to deliver dynamic and software and web application</p>
 
                 </div>
-            </div>
-            <div className="grid-default-color grid-2">
+            </motion.div>
+            <motion.div className="grid-default-color grid-2"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="flex items-center justify-center w-full h-full">
                     <p className="flrx iteams-end text-5xl text-gray-500">
                         In love with this guys
@@ -33,8 +80,13 @@ export const About = () => {
                 </div>
                 
 
-            </div>
-            <div className="grid-default-color grid-3">
+            </motion.div>
+            <motion.div className="grid-default-color grid-3"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="z-10 w-[50%]">
                     <p className="headtext">Time Zone</p>
                     <p className="subtext">I'm based in India, and opean to work worldwide</p>
@@ -45,16 +97,26 @@ export const About = () => {
                 {/* <Globe/> */}
             </figure>
 
-            </div>
-            <div className="grid-special-color grid-4">
+            </motion.div>
+            <motion.div className="grid-special-color grid-4"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="flex flex-col items-center justify-center gap-4 size-full">
                     <p className="text-center headtext">Do you want to start a project together?</p>
                     <CopyEmailButton/>
 
                 </div>
 
-            </div>
-            <div className="grid-default-color grid-5">
+            </motion.div>
+            <motion.div className="grid-default-color grid-5"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            >
                 <div className="z-10 w-[50%]">
                     <p className="headText">Tech Stak</p>
                     <p className="subtext">
@@ -66,9 +128,9 @@ export const About = () => {
                     <Frameworks/>
                 </div>
 
-            </div>
+            </motion.div>
 
-        </div>
+        </motion.div>
 
     </section>
   )
