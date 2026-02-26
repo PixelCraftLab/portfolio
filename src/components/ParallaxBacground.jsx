@@ -7,6 +7,20 @@ const ParallaxBackground = () => {
     const planetsY = useTransform(x,[0, 0.5], ["0%", "-20%"]);
     const mountain2Y = useTransform(x,[0, 0.5], ["0%", "30%"]);
     const mountain1Y = useTransform(x,[0, 0.5], ["0%", "0%"]);
+
+const imageX = useTransform(
+  scrollYProgress,
+  [0, 0.5],
+  ["0%", "80%"]   
+
+);
+
+
+const imageXSpring = useSpring(imageX, { damping: 50 });
+
+
+
+
   return (
     <section className="absolute inset-0 bg-black/40">
       <div className="relative h-screen overflow-hidden">
@@ -65,6 +79,14 @@ const ParallaxBackground = () => {
             backgroundSize: "cover",
             y: mountain1Y,
           }}
+        />
+
+        <motion.img
+          src="/assets/projects/VishalImg.png"
+          alt="My Image"
+          className="absolute bottom-5 left-190 right-0 w-72 z-10 object-contain lg:w-[500px] sm:w-52 md:w-72"
+          style={{x:imageXSpring}}
+
         />
 
 
