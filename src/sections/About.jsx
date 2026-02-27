@@ -32,7 +32,7 @@ export const About = () => {
         <img
             src="/assets/projects/StarsImg.png"   
             alt="stars"
-            className="absolute inset-0 w-full h-full object-cover z-10 animate-pulse"
+            className="absolute inset-0 w-full h-170 object-cover z-10 animate-pulse"
         />
         
         <motion.h2
@@ -121,12 +121,19 @@ export const About = () => {
                 </figure>
 
             </motion.div>
-            <motion.div className="grid-special-color grid-4"
+
+
+            {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/> */}
+
+            <motion.div className="grid-special-color grid-4 "
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             >
+
+                
+
                 <div className="flex flex-col items-center justify-center gap-4 size-full">
                     <p className="text-center headtext">Do you want to start a project together?</p>
                     <CopyEmailButton/>
