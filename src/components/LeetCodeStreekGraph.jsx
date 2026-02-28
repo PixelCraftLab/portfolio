@@ -1,21 +1,29 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const LeetCodeStreekGraph = () => {
   return (
-    <div>
+    <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ always: true, amount: 0.5 }}
+    >
 
          <h2 
-            className='m-10 ml-15 mt-5 mb-10 text-3xl'>
+            className='m-10 ml-15 mt-5 mb-10 text-3xl hover:text-4xl transition-all duration-300 ease-out'
+            
+            >
             LeetCode Streek
         </h2>
             <img 
-            className='ml-15'
+            className='ml-15 transform transition-transform duration-500 ease-in-out hover:scale-120'
             src="https://leetcard.jacoblin.cool/VishalKumarGowda?ext=heatmap" 
             alt="LeetCode Heatmap"
             />
 
 
-    </div>
+    </motion.div>
   )
 }
 
