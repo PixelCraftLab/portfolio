@@ -83,14 +83,14 @@ export const About = () => {
             >
                 <div className="flex items-center justify-center w-full h-full">
                     <p className="flrx iteams-end text-5xl text-gray-500">
-                        In love with this guys
+                        To be updated
                     </p>
-                    <img src="assets/logos/css3.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    {/* <img src="assets/logos/css3.svg" className="w-12 h-12 md:w-16 md:h-16" />
                     <img src="assets/logos/html5.svg" className="w-12 h-12 md:w-16 md:h-16" />
                     <img src="assets/logos/javascript.svg" className="w-12 h-12 md:w-16 md:h-16" />
                     <img src="assets/logos/react.svg" className="w-12 h-12 md:w-16 md:h-16" />
                     <img src="assets/logos/visualstudiocode.svg" className="w-12 h-12 md:w-16 md:h-16" />
-                    <img src="assets/logos/vitejs.svg" className="w-12 h-12 md:w-16 md:h-16" />
+                    <img src="assets/logos/vitejs.svg" className="w-12 h-12 md:w-16 md:h-16" /> */}
 
                 </div>
                 
