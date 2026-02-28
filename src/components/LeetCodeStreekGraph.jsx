@@ -17,7 +17,7 @@ const LeetCodeStreekGraph = () => {
             LeetCode Streek
         </h2>
             <img 
-            className='ml-15 transform transition-transform duration-500 ease-in-out hover:scale-120'
+            className='ml-15 transform transition-transform duration-500 ease-in-out hover:scale-105'
             src="https://leetcard.jacoblin.cool/VishalKumarGowda?ext=heatmap" 
             alt="LeetCode Heatmap"
             />
