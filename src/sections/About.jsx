@@ -79,7 +79,7 @@ export const About = () => {
                 </div>
             </motion.div>
             <motion.div className="grid-default-color grid-2
-            border-4 border-transparent via-blue-600
+            border-4 border-transparent via-blue-800
             "
             variants={cardVariants}
             initial="hidden"
@@ -146,7 +146,9 @@ export const About = () => {
                 </div>
 
             </motion.div>
-            <motion.div className="grid-default-color grid-5"
+            <motion.div className="grid-default-color grid-5
+            border-4 border-transparent via-black
+            "
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
