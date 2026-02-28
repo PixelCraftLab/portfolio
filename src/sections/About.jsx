@@ -44,6 +44,8 @@ export const About = () => {
             >
             About Me
         </motion.h2>
+        {/* <div className="absolute inset-0 pointer-events-none rounded-lg border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 animate-border-rotate"></div> */}
+        
         <motion.div
             className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
             initial="hidden"
@@ -58,7 +60,8 @@ export const About = () => {
             }}
             >
 
-            <motion.div className="relative grid-default-color grid-1 flex flex-col justify-end"
+            <motion.div className="relative grid-default-color grid-1 flex flex-col justify-end 
+                border-4 border-transparent via-purple-600"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -67,7 +70,7 @@ export const About = () => {
             >
                 <img
                 src="assets/coding-pov.png"
-                className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5]"
+                className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5] "
                 />
                 <div className="z-10">
                     <p className="headtext">Hi, I am Vishal</p>
@@ -75,7 +78,9 @@ export const About = () => {
 
                 </div>
             </motion.div>
-            <motion.div className="grid-default-color grid-2"
+            <motion.div className="grid-default-color grid-2
+            border-4 border-transparent via-blue-600
+            "
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
