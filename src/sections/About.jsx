@@ -162,6 +162,13 @@ export const About = () => {
 
         </motion.div>
 
+
+
+
+
+
+
+
     </section>
   )
 }
