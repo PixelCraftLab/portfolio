@@ -71,7 +71,7 @@ const  HeroText = () => {
         <motion.p 
           variants={item}
           className="text-5xl font-medium text-transparent bg-clip-text 
-        bg-gradient-to-r from-white via-black to-black" >
+        bg-gradient-to-r from-blue-200 via-white to-white" >
           A Developer <br/> Dedicated to Crafting
         </motion.p>
 
