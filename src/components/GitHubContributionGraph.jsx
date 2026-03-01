@@ -20,6 +20,7 @@ const GitHubContributionGraph = () => {
         className='ml-15 mb-10 transform transition-transform duration-500 ease-in-out hover:scale-120'
         src="https://ghchart.rshah.org/PixelCraftLab" 
         alt="GitHub Contribution Calendar"
+        // src="https://ghchart.rshah.org/409ba5/PixelCraftLab" blue colorz
         />
 
 
