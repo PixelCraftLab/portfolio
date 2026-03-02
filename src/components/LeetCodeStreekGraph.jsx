@@ -10,7 +10,7 @@ const LeetCodeStreekGraph = () => {
             viewport={{ always: true, amount: 0.5 }}
     >
         <a 
-        className='cursor-pointer'
+        className='cursor-pointer' target='_blank'
         href='https://leetcode.com/u/VishalKumarGowda/'
         >
          <h2 
@@ -22,7 +22,7 @@ const LeetCodeStreekGraph = () => {
         </a>
         
         <a 
-        className='cursor-pointer'
+        className='cursor-pointer' target='_blank'
         href='https://leetcode.com/u/VishalKumarGowda/'
         >
             <img 
