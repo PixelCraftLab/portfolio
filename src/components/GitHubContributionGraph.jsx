@@ -9,11 +9,15 @@ const GitHubContributionGraph = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ always: true, amount: 0.5 }}
     >
+
+
+      <a href='https://github.com/PixelCraftLab'>
         <h2 className='font-bold m-10 ml-15 text-3xl hover:text-4xl transition-all duration-300 ease-out'
             
         >
             GitHub Contributions
         </h2>
+      </a>
 
 
         <img 
