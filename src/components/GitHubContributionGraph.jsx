@@ -11,7 +11,10 @@ const GitHubContributionGraph = () => {
     >
 
 
-      <a href='https://github.com/PixelCraftLab'>
+      <a
+      target='_blank' 
+      href='https://github.com/PixelCraftLab'
+      >
         <h2 className='font-bold m-10 ml-15 text-3xl hover:text-4xl transition-all duration-300 ease-out'
             
         >
@@ -19,7 +22,10 @@ const GitHubContributionGraph = () => {
         </h2>
       </a>
 
-      <a href='https://github.com/PixelCraftLab'>
+      <a 
+      target='_blank'
+      href='https://github.com/PixelCraftLab'
+      >
         <img 
         className='ml-15 mb-10 transform transition-transform duration-500 ease-in-out hover:scale-120'
         src="https://ghchart.rshah.org/PixelCraftLab" 
