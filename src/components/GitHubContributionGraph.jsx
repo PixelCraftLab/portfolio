@@ -19,7 +19,7 @@ const GitHubContributionGraph = () => {
         </h2>
       </a>
 
-
+      <a href='https://github.com/PixelCraftLab'>
         <img 
         className='ml-15 mb-10 transform transition-transform duration-500 ease-in-out hover:scale-120'
         src="https://ghchart.rshah.org/PixelCraftLab" 
@@ -34,7 +34,7 @@ const GitHubContributionGraph = () => {
         alt="GitHub Activity Graph"
         style={{ width: "100%", maxWidth: "900px" }}
         /> */}
-
+      </a>
 
 
     </motion.div>
