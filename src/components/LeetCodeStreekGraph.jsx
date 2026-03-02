@@ -9,13 +9,17 @@ const LeetCodeStreekGraph = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ always: true, amount: 0.5 }}
     >
-
+        <a 
+        className='cursor-pointer'
+        href='https://leetcode.com/u/VishalKumarGowda/'
+        >
          <h2 
             className='m-10 ml-15 mt-5 mb-10 text-3xl hover:text-4xl transition-all duration-300 ease-out'
             
             >
             LeetCode Streek
         </h2>
+        </a>
             <img 
             className='ml-15 transform transition-transform duration-500 ease-in-out hover:scale-105'
             src="https://leetcard.jacoblin.cool/VishalKumarGowda?ext=heatmap" 
