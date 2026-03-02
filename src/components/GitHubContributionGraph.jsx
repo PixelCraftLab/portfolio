@@ -12,6 +12,7 @@ const GitHubContributionGraph = () => {
 
 
       <a
+      className='cursor-pointer'
       target='_blank' 
       href='https://github.com/PixelCraftLab'
       >
@@ -23,6 +24,7 @@ const GitHubContributionGraph = () => {
       </a>
 
       <a 
+      className='cursor-pointer'
       target='_blank'
       href='https://github.com/PixelCraftLab'
       >

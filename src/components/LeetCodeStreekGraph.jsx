@@ -26,7 +26,7 @@ const LeetCodeStreekGraph = () => {
         href='https://leetcode.com/u/VishalKumarGowda/'
         >
             <img 
-            className='ml-15 transform transition-transform duration-500 ease-in-out hover:scale-105'
+            className=' cursor-pointer ml-15 transform transition-transform duration-500 ease-in-out hover:scale-105'
             src="https://leetcard.jacoblin.cool/VishalKumarGowda?ext=heatmap" 
             alt="LeetCode Heatmap"
             />
