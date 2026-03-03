@@ -5,12 +5,17 @@ import ParallaxBacground from "../components/ParallaxBacground";
 import { Canvas } from "@react-three/fiber";
 
 
+
+
+
+
+
 const Hero = () => {
   return (
     <section className="flex items-start justify-center
     md:items-start md:justify-start min-h-screen overflow-hidden
     c-space">
-      ,
+      
         <HeroText />
         <ParallaxBacground />
 

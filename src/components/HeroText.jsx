@@ -4,6 +4,9 @@ import {motion} from "framer-motion"
 
 
 
+
+
+
 const container = {
   hidden: { opacity: 0 },
   show: {
@@ -71,7 +74,7 @@ const  HeroText = () => {
         <motion.p 
           variants={item}
           className="text-5xl font-medium text-transparent bg-clip-text 
-        bg-gradient-to-r from-blue-200 via-white to-white" >
+        bg-gradient-to-r from-neutral-200 via-white to-white" >
           A Developer <br/> Dedicated to Crafting
         </motion.p>
 

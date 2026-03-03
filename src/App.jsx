@@ -5,6 +5,7 @@ import { About } from './sections/About.jsx';
 import Projects from './sections/Projects.jsx';
 import Graphs from './sections/Graphs.jsx';
 import CustomCursor from './sections/CustomCursor.jsx';
+// import ChatBot from './sections/ChatBot.jsx';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Graphs/>
     <Projects/>
     <CustomCursor/>
+    {/* <ChatBot/> */}
     
     
     
