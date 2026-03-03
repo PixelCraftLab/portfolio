@@ -20,13 +20,14 @@ const Projects = () => {
   const [preview, setPreview]= useState(null);
 
   return (
-    <section onMouseMove={handleMouseMove} className="relative c-space section-spacing ">
+    <section onMouseMove={handleMouseMove} className="relative c-space section-spacing "
+     style={{
+        backgroundImage:"url(/assets/projects/StarsImg.png)",
+        backgroundSize: "cover",
+     }}
+    >
 
-      {/* <img
-            src="/assets/projects/StarssImgg.png"   
-            alt="stars"
-            className="absolute inset-0 w-full h-full object-cover z-10 animate-pulse"
-        /> */}
+      
 
         <motion.h2 className="text-heading "
             initial={{ opacity: 0, x: -100 }}

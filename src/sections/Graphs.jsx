@@ -7,14 +7,9 @@ const Graphs = () => {
   return (
     <div  className='relative h-full w-full overflow-hidden mt-10 '
           style={{
-          
-           
-            backgroundImage: "url(/assets/projects/sky.jpg)",
-            
-            backgroundSize:"cover",
-            
-            
-            }}
+        backgroundImage:"url(/assets/projects/StarsImg.png)",
+        backgroundSize: "cover",
+    }}
     
     >
         {/* <MatrixBackground/> */}
