@@ -27,13 +27,18 @@ const cardVariants = {
 
 export const About = () => {
   return (
-    <section className="relative c-space section-spacing overflow-hidden">
+    <section className="relative c-space section-spacing "
+    style={{
+        backgroundImage:"url(/assets/projects/StarsImg.png)",
+        backgroundSize: "cover",
+    }}
+    >
 
-        <img
+        {/* <img
             src="/assets/projects/StarsImg.png"   
             alt="stars"
             className="absolute inset-0 w-full h-170 object-cover z-10 animate-pulse"
-        />
+        /> */}
         
         <motion.h2
             className="text-heading"
@@ -78,29 +83,28 @@ export const About = () => {
 
                 </div>
             </motion.div>
-            <motion.div className="grid-default-color grid-2
-            border-4 border-transparent via-blue-800
-            "
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            >
-                <div className="flex items-center justify-center w-full h-full">
-                    <p className="flrx iteams-end text-5xl text-gray-500">
-                        To be updated
+            <motion.div
+                className=" overflow-scroll grid-default-color grid-2
+                border-4 border-transparent via-blue-800
+                p-8 md:p-12 rounded-2xl"
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                >
+                <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
+
+                    <p>
+                    Meet <span className="text-white font-semibold">Me</span> — a developer driven by curiosity, creativity, and a deep interest in building intelligent digital experiences.
                     </p>
-                    {/* <img src="assets/logos/css3.svg" className="w-12 h-12 md:w-16 md:h-16" />
-                    <img src="assets/logos/html5.svg" className="w-12 h-12 md:w-16 md:h-16" />
-                    <img src="assets/logos/javascript.svg" className="w-12 h-12 md:w-16 md:h-16" />
-                    <img src="assets/logos/react.svg" className="w-12 h-12 md:w-16 md:h-16" />
-                    <img src="assets/logos/visualstudiocode.svg" className="w-12 h-12 md:w-16 md:h-16" />
-                    <img src="assets/logos/vitejs.svg" className="w-12 h-12 md:w-16 md:h-16" /> */}
+
+                    <p>
+                    I don’t just build websites — I build systems that think, react, and feel alive.
+                    </p>
+
 
                 </div>
-                
-
-            </motion.div>
+                </motion.div>
             <motion.div className="grid-default-color grid-3"
             variants={cardVariants}
             initial="hidden"
@@ -179,3 +183,6 @@ export const About = () => {
     </section>
   )
 }
+
+
+export default About;
