@@ -92,7 +92,7 @@ const  HeroText = () => {
             drop-shadow-[0_0_30px_rgba(0,255,255,0.9)]
             animate-pulse">
             <FlipWords />
-            </motion.p>
+        </motion.p>
 
         {/* <motion.p 
           variants={item}

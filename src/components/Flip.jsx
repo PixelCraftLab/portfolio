@@ -23,9 +23,9 @@ function FlipWords() {
   }, []);
 
   return (
-    <h2 id="flipwords">
+    <div id="flipwords">
       {words[currentWordIndex]}
-    </h2>
+    </div>
   );
 }
 
