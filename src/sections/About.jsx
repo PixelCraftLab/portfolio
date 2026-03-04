@@ -29,22 +29,25 @@ export const About = () => {
 
    const playIntro = async () => {
   try {
-        const response = await fetch(`http://localhost:5000/api/voice?t=${Date.now()}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            text: "Hi, I am Vishal Kumar Gowda, a Computer Science student passionate about open source and neuroscience inspired AI systems."
-        }),
-        });
+    const response = await fetch("/api/voice", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: "Hi, I am Vishal Kumar Gowda, a Computer Science student passionate about open source and neuroscience inspired AI systems."
+      }),
+    });
 
-        const blob = await response.blob();
-        const audioUrl = URL.createObjectURL(blob);
-        const audio = new Audio(audioUrl);
-        audio.play();
-    } catch (error) {
-        console.error("Error playing intro:", error);
-    }
-    };
+    const blob = await response.blob();
+    const audioUrl = URL.createObjectURL(blob);
+
+    const audio = new Audio(audioUrl);
+    audio.play();
+  } catch (error) {
+    console.error("Audio error:", error);
+  }
+};
 
   return (
 
@@ -65,10 +68,10 @@ export const About = () => {
         /> */}
         
         <motion.h2
-            className="text-heading"
+            className="text-heading "
             initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut" }}
+            whileInView={{ opacity: 1, x: 500 }}
+            transition={{ duration: 2.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
             >
             About Me

@@ -28,16 +28,16 @@ const Projects = () => {
     >
 
       
-
-        <motion.h2 className="text-heading "
+        <motion.h2
+            className="text-heading "
             initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, ease: "easeOut" }}
+            whileInView={{ opacity: 1, x: 500 }}
+            transition={{ duration: 2.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
-            
-        >
+            >
             My Projects
         </motion.h2>
+        
 
         <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/>
 
