@@ -183,7 +183,7 @@ export const About = () => {
                 </div>
 
             </motion.div>
-            <motion.div className=" grid-default-color grid-5
+            <motion.div className="border-2 border-white grid-default-color grid-5
              via-black
             "
             variants={cardVariants}
