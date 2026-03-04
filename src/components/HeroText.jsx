@@ -88,7 +88,7 @@ const  HeroText = () => {
             variants={item}
             className="text-5xl font-extrabold 
             text-transparent bg-clip-text 
-            bg-gradient-to-r from-cyan-400 via-blue-500 to-primary
+            bg-gradient-to-r from-cyan-400 via-blue-500 to-white
             drop-shadow-[0_0_30px_rgba(0,255,255,0.9)]
             animate-pulse">
             <FlipWords />
