@@ -90,7 +90,7 @@ export const About = () => {
             >
 
             <motion.div className="relative grid-default-color grid-1 flex flex-col justify-end 
-                border-4 border-transparent via-purple-600"
+                border-4 border-transparent via-blue-700"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -118,7 +118,7 @@ export const About = () => {
             </motion.div>
             <motion.div
                 className=" overflow-scroll grid-default-color grid-2
-                border-4 border-transparent via-blue-800
+                border-4 border-purple-800 via-blue-800
                 p-8 md:p-12 rounded-2xl"
                 variants={cardVariants}
                 initial="hidden"
@@ -138,13 +138,13 @@ export const About = () => {
 
                 </div>
                 </motion.div>
-            <motion.div className="grid-default-color grid-3"
+            <motion.div className="border-4 border-blue-400 grid-default-color grid-3"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             >
-                <div className="z-10 w-[50%]">
+                <div className=" z-10 w-[50%]">
                     <p className="headtext">Time Zone</p>
                     <p className="subtext">I'm based in India, and opean to work worldwide</p>
 
@@ -183,25 +183,25 @@ export const About = () => {
                 </div>
 
             </motion.div>
-            <motion.div className="grid-default-color grid-5
-            border-4 border-transparent via-black
+            <motion.div className=" grid-default-color grid-5
+             via-black
             "
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             >
-                <div className="z-10 w-[50%]">
+                <div className=" z-10 w-[50%]">
                     <p className="headText">Tech Stak</p>
                     <p className="subtext">
                         I specialize in a variety of languages, framewrks , and tools that allow me to build scalable applications
                     </p>
                     
                 </div>
-                {/* <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
+                <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
                     
                     <Frameworks/>
-                </div> */}
+                </div>
 
             </motion.div>
 
