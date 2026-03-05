@@ -104,8 +104,8 @@ export const About = () => {
                 src="assets/coding-pov.png"
                 className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5] "
                 />
-                <p className="headtext ">Hi, I am Vishal</p>
-                <p className="subtext ">
+                <p className="headtext z-1">Hi, I am Vishal</p>
+                <p className="subtext z-1">
                 Over the last few months, I developed frontend dev skills 
                 along with backend basics to deliver dynamic software and web applications.
                 </p>
