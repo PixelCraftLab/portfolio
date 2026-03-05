@@ -1,6 +1,7 @@
 import CopyEmailButton from "../components/CopyEmailButton"
 import {Frameworks} from "../components/Framework"
 import { motion } from "framer-motion"
+import { useRef, useEffect, useState } from "react";
 
 const cardVariants = {
   hidden: {
@@ -27,27 +28,34 @@ const cardVariants = {
 
 export const About = () => {
 
-//    const playIntro = async () => {
-//   try {
-//     const response = await fetch("/api/voice", {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify({
-//         text: "Hi, I am Vishal Kumar Gowda, a Computer Science student passionate about open source and neuroscience inspired AI systems."
-//       }),
-//     });
+        const audioRef = useRef(null);
+        const [isPlaying, setIsPlaying] = useState(false);
 
-//     const blob = await response.blob();
-//     const audioUrl = URL.createObjectURL(blob);
+        useEffect(() => {
+        const audio = audioRef.current;
 
-//     const audio = new Audio(audioUrl);
-//     audio.play();
-//   } catch (error) {
-//     console.error("Audio error:", error);
-//   }
-// };
+        if (audio) {
+            audio.play()
+            .then(() => setIsPlaying(true))
+            .catch(() => {
+                console.log("Autoplay blocked by browser");
+            });
+        }
+        }, []);
+
+        const toggleAudio = () => {
+        const audio = audioRef.current;
+
+        if (!audio) return;
+
+        if (isPlaying) {
+            audio.pause();
+            setIsPlaying(false);
+        } else {
+            audio.play();
+            setIsPlaying(true);
+        }
+        };
 
   return (
 
@@ -216,7 +224,18 @@ export const About = () => {
 
 
 
-
+<audio ref={audioRef} preload="auto" loop>
+  <source src="/audio/intro.mp3" type="audio/mpeg" />
+</audio>
+        <button
+            onClick={toggleAudio}
+            className="fixed bottom-6 right-6 
+            bg-purple-600 hover:bg-purple-700 
+            text-white px-5 py-3 rounded-full 
+            shadow-lg z-50 transition"
+            >
+            {isPlaying ? "Pause Intro" : " Play Intro"}
+        </button>
     </section>
 
   )
