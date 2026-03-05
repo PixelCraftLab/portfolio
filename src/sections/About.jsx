@@ -27,27 +27,27 @@ const cardVariants = {
 
 export const About = () => {
 
-   const playIntro = async () => {
-  try {
-    const response = await fetch("/api/voice", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        text: "Hi, I am Vishal Kumar Gowda, a Computer Science student passionate about open source and neuroscience inspired AI systems."
-      }),
-    });
+//    const playIntro = async () => {
+//   try {
+//     const response = await fetch("/api/voice", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         text: "Hi, I am Vishal Kumar Gowda, a Computer Science student passionate about open source and neuroscience inspired AI systems."
+//       }),
+//     });
 
-    const blob = await response.blob();
-    const audioUrl = URL.createObjectURL(blob);
+//     const blob = await response.blob();
+//     const audioUrl = URL.createObjectURL(blob);
 
-    const audio = new Audio(audioUrl);
-    audio.play();
-  } catch (error) {
-    console.error("Audio error:", error);
-  }
-};
+//     const audio = new Audio(audioUrl);
+//     audio.play();
+//   } catch (error) {
+//     console.error("Audio error:", error);
+//   }
+// };
 
   return (
 
@@ -104,20 +104,20 @@ export const About = () => {
                 src="assets/coding-pov.png"
                 className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5] "
                 />
-                <p className="headtext">Hi, I am Vishal</p>
-                <p className="subtext">
+                <p className="headtext ">Hi, I am Vishal</p>
+                <p className="subtext ">
                 Over the last few months, I developed frontend dev skills 
                 along with backend basics to deliver dynamic software and web applications.
                 </p>
 
-                <button
+                {/* <button
                 onClick={playIntro}
                 className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-700 
                             text-white rounded-lg transition duration-300 
                             shadow-lg hover:shadow-purple-500/50"
                 >
                 🔊 Hear About Me
-                </button>
+                </button> */}
             </motion.div>
             <motion.div
                 className=" overflow-scroll grid-default-color grid-2
