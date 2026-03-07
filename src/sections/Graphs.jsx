@@ -1,7 +1,7 @@
 import React from 'react'
 import GitHubContributionGraph from '../components/GitHubContributionGraph'
 import LeetCodeStreekGraph from '../components/LeetCodeStreekGraph'
-// import MatrixBackground from '../components/MatrixBackground'
+
 
 const Graphs = () => {
   return (
@@ -13,7 +13,7 @@ const Graphs = () => {
     }}
     
     >
-        {/* <MatrixBackground/> */}
+       
         <div className='z-10 h-full'>
         <LeetCodeStreekGraph/>
         <GitHubContributionGraph/>
