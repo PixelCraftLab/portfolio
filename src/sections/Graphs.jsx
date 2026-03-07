@@ -9,6 +9,7 @@ const Graphs = () => {
           style={{
         backgroundImage:"url(/assets/projects/StarsImg.png)",
         backgroundSize: "cover",
+        
     }}
     
     >
