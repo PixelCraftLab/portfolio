@@ -19,16 +19,7 @@ const Hero = () => {
         <HeroText />
         <ParallaxBacground />
 
-        {/* <figure 
-        className="absolute inset-0" style={{width: "100vw", height: "100vh"}}>
         
-        <Canvas>
-            <Astronaut position={[0, -1, 0]} /><OrbitControls enableZoom={false} />
-            
-
-        </Canvas>
-
-        </figure> */}
     </section>
   )
 }
