@@ -34,13 +34,7 @@ export const About = () => {
         useEffect(() => {
         const audio = audioRef.current;
 
-        // if (audio) {
-        //     audio.play()
-        //     .then(() => setIsPlaying(true))
-        //     .catch(() => {
-        //         console.log("Autoplay blocked by browser");
-        //     });
-        // }
+        
         }, []);
 
         const toggleAudio = () => {
