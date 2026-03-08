@@ -13,7 +13,7 @@ const CopyEmailButton = () => {
             setCopied(false)
         },1000)
 
-        alert("Very exited to connect with you 😇, email coppied successfully (vishalgowdask65@gmail.com)")
+        alert("Very exited to connect with you, email coppied successfully (vishalgowdask65@gmail.com)")
 
     }
   return (
