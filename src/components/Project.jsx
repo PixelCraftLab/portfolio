@@ -7,8 +7,8 @@ const Project = ({title, description, subDescription, href, image,tags, setPrevi
   return (
     <>
     <motion.div className='flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0'
-          onMouseEnter={() => setPreview(image)}
-          onMouseLeave={()=> setPreview(null)}
+          // onMouseEnter={() => setPreview(image)}
+          // onMouseLeave={()=> setPreview(null)}
           whileHover={{ scale: 1.1 }}      
           transition={{ type: "spring", stiffness: 200, damping: 15 }}
     
@@ -33,7 +33,7 @@ const Project = ({title, description, subDescription, href, image,tags, setPrevi
       </button>
     </motion.div>
     <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
-    {isHidden &&(<ProjectDetails
+    {/* {isHidden &&(<ProjectDetails
     title={title}
     description={description}
     subDescription={subDescription}
@@ -41,7 +41,7 @@ const Project = ({title, description, subDescription, href, image,tags, setPrevi
     tags={tags}
     href={href}
     closeModal={()=>setIsHidden(false)}
-    />)}
+    />)} */}
     </>
   )
 }
