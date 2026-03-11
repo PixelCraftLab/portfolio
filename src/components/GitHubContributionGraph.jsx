@@ -36,12 +36,7 @@ const GitHubContributionGraph = () => {
         />
 
 
-        {/* <img
-        className='ml-15'
-        src="https://github-readme-activity-graph.vercel.app/graph?username=PixelCraftLab&theme=github"
-        alt="GitHub Activity Graph"
-        style={{ width: "100%", maxWidth: "900px" }}
-        /> */}
+        
       </a>
 
 
