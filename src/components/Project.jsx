@@ -33,7 +33,7 @@ const Project = ({title, description, subDescription, href, image,tags, setPrevi
       </button>
     </motion.div>
     <div className='bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full'/>
-    {/* {isHidden &&(<ProjectDetails
+    {isHidden &&(<ProjectDetails
     title={title}
     description={description}
     subDescription={subDescription}
@@ -41,7 +41,7 @@ const Project = ({title, description, subDescription, href, image,tags, setPrevi
     tags={tags}
     href={href}
     closeModal={()=>setIsHidden(false)}
-    />)} */}
+    />)}
     </>
   )
 }
