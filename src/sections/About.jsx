@@ -72,7 +72,7 @@ export const About = () => {
         <motion.h2
             className="text-heading "
             initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 500 }}
+            whileInView={{ opacity: 1, x: 100 }}
             transition={{ duration: 2.2, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.5 }}
             >
