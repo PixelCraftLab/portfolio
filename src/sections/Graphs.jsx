@@ -5,12 +5,18 @@ import LeetCodeStreekGraph from '../components/LeetCodeStreekGraph'
 
 const Graphs = () => {
   return (
-    <div  className='relative h-full w-full overflow-hidden mt-10 '
-          style={{
-        backgroundImage:"url(/assets/projects/StarsImg.png)",
-        backgroundSize: "cover",
-        
+    <div
+    className='ml-30 mb-10 mt-10 h-full w-full bg-cover bg-center relative  '
+    style={{
+        backgroundImage:"url(assets/coding-pov.png)",
     }}
+
+    >
+    <div  className='position absalute h-full w-full overflow-hidden mt-10  '
+          
+        
+        
+  
     
     >
        
@@ -21,6 +27,7 @@ const Graphs = () => {
         
 
     </div >
+    </div>
   )
 }
 

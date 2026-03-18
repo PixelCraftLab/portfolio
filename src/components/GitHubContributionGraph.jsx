@@ -16,7 +16,7 @@ const GitHubContributionGraph = () => {
       target='_blank' 
       href='https://github.com/PixelCraftLab'
       >
-        <h2 className='font-bold m-10 ml-15 text-3xl hover:text-4xl transition-all duration-300 ease-out'
+        <h2 className='font-bold m-10 ml-1 text-3xl hover:text-4xl transition-all duration-300 ease-out'
             
         >
             GitHub Contributions

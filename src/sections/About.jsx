@@ -95,7 +95,7 @@ export const About = () => {
             >
 
             <motion.div className="relative grid-default-color grid-1 flex flex-col justify-end 
-                border-4 border-transparent via-blue-700"
+                border-4 border-transparent via-black"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -103,13 +103,13 @@ export const About = () => {
 
             >
                 <img
-                src="assets/coding-pov.png"
+                // src="assets/coding-pov.png"
                 className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5] "
                 />
-                <p className="headtext z-1">Hi, I am Vishal</p>
-                <p className="subtext z-1">
-                Over the last few months, I developed frontend dev skills 
-                along with backend basics to deliver dynamic software and web applications.
+                {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
+                <p className="">
+                I am Vishal, a first-year Computer Science student from India. I consider myself as a fast learner, highly motivated, and deeply committed to contributing meaningfully to open-source software. 
+                I am passionate about building accessible, scalable, and maintainable frontend systems, and i strongly believe that consistent effort, persistence, and critical thinking always lead to great results.
                 </p>
 
                 {/* <button
