@@ -199,7 +199,7 @@ export const About = () => {
                 <div className=" z-10 w-[50%]">
                     <p className="headText">Tech Stak</p>
                     <p className="subtext">
-                        I specialize in a variety of languages, framewrks , and tools that allow me to build scalable applications
+                       I leverage a modern, full-stack technology stack to build scalable, efficient, and production-ready applications. I focus on clean architecture, performance optimization, and maintainable code, enabling me to deliver robust solutions for frontend systems.
                     </p>
                     
                 </div>

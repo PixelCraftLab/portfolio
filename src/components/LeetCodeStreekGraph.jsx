@@ -9,7 +9,7 @@ const LeetCodeStreekGraph = () => {
             transition={{ duration: 0.9, ease: "easeOut" }}
             viewport={{ always: true, amount: 0.5 }}
     >
-        {/* <a 
+        <a 
         className='cursor-pointer' target='_blank'
         href='https://leetcode.com/u/VishalKumarGowda/'
         >
@@ -30,7 +30,7 @@ const LeetCodeStreekGraph = () => {
             src="https://leetcard.jacoblin.cool/VishalKumarGowda?ext=heatmap" 
             alt="LeetCode Heatmap"
             />
-        </a> */}
+        </a>
 
 
     </motion.div>
