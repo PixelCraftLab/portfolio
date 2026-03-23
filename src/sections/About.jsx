@@ -94,7 +94,7 @@ export const About = () => {
             }}
             >
 
-            <motion.div className="relative grid-default-color grid-1 flex flex-col justify-end 
+            <motion.div className="overflow-scroll relative grid-default-color grid-1 flex flex-col justify-end 
                 border-4 border-transparent via-black"
             variants={cardVariants}
             initial="hidden"
@@ -107,9 +107,12 @@ export const About = () => {
                 className="w-40 mb-4"
                 />
                 {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
-                <p className="">
-                I am Vishal, a first-year Computer Science student from India. I consider myself as a fast learner, highly motivated, and deeply committed to contributing meaningfully to open-source software. 
-                I am passionate about building accessible, scalable, and maintainable frontend systems, and i strongly believe that consistent effort, persistence, and critical thinking always lead to great results.
+                <p className=" text-gray-300">
+                Im a software developer who enjoys turning ideas into real, usable products. I focus on building clean, scalable applications and solving problems that go beyond just writing code.
+                Ive worked on projects involving realworld problem solving—always with an emphasis on performance, usability, and maintainability. Im particularly interested in building applications that combine good design with strong backend logic.
+                What sets me apart is my approach: I dont just build features, I think about why they matter, how they scale, and how users experience them. I enjoy learning new technologies quickly and applying them in practical ways.
+                I also gained hands-on experience leading a social impact startup project for about 3 to 4 months. I was responsible for designing the system, planning features, coordinating the development team, and making sure everything was done on time. This experience helped me improve my problem-solving, planning, and execution skills, which I am excited to bring to this in your project.
+                Currently, Im focused on strengthening my skills.
                 </p>
 
                 {/* <button
@@ -133,11 +136,11 @@ export const About = () => {
                 <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
 
                     <p>
-                    Meet <span className="text-white font-semibold">Me</span> — a developer driven by curiosity, creativity, and a deep interest in building intelligent digital experiences.
+                        a developer driven by curiosity, creativity, and a deep interest in building intelligent digital experiences.
                     </p>
 
                     <p>
-                    I don’t just build websites — I build systems that think, react, and feel alive.
+                    I dont just build websites I build systems that think, react, and feel alive.
                     </p>
 
 
@@ -151,7 +154,9 @@ export const About = () => {
             >
                 <div className=" z-10 w-[50%]">
                     <p className="headtext">Time Zone</p>
-                    <p className="subtext">I'm based in India, and opean to work worldwide</p>
+                    <p className="subtext">
+                        Im based in India (IST) and comfortable collaborating across different time zones. I maintain flexible working hours to ensure smooth communication and timely delivery, whether working with teams locally or globally. I value clear responsibility.
+                    </p>
 
 
                 </div>
