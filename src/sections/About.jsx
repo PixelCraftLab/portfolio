@@ -103,8 +103,8 @@ export const About = () => {
 
             >
                 <img
-                // src="assets/coding-pov.png"
-                className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inste--y-10 lg:acale[2.5] "
+                src="assets/projects/SelfImg.png"
+                className="w-40 mb-4"
                 />
                 {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
                 <p className="">
