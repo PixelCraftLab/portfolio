@@ -9,8 +9,12 @@ import CustomCursor from './sections/CustomCursor.jsx';
 
 const App = () => {
   return (
-    <div className="container mx-auto max-w-7xl">
+    <div className="container mx-auto max-w-7xl ">
     <Navbar />  
+    <section id="home"><Hero /></section>
+      <section id="about"><About /></section>
+      <section id="projects"><Projects /></section>
+      <section id="graphs"><Graphs /></section>
     <Hero />
     <About/>
     <Graphs/>

@@ -1,22 +1,24 @@
 import { useState } from "react";
 import {motion} from "motion/react";
+import { Link } from "react-router";
 
 function Navigation(){
   return <ul className="nav-ul">
     <li className="nav-li">
-      <a className="nav-link">Home</a>
+      
+      <a href="#home" className="cursor-pointer nav-link">Home</a>
     </li>
 
     <li className="nav-li">
-      <a className="nav-link">About</a>
+      <a href="#about" className="cursor-pointer nav-link">About</a>
     </li>
     
     <li className="nav-li">
-      <a className="nav-link">Projects</a>
+      <a href="#projects" className="cursor-pointer nav-link">Projects</a>
     </li>
 
     <li className="nav-li">
-      <a className="nav-link">Contact</a>
+      <a className="cursor-pointer nav-link">Contact</a>
     </li>
     </ul>
 }

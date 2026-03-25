@@ -56,7 +56,7 @@ export const About = () => {
 
     
 
-    <section className="relative c-space section-spacing "
+    <section className="relative c-space section-spacing"
     style={{
         backgroundImage:"url(/assets/projects/StarsImg.png)",
         backgroundSize: "cover",
