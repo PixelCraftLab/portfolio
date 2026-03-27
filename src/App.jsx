@@ -12,14 +12,15 @@ const App = () => {
     <div className="container mx-auto max-w-7xl ">
     <Navbar />  
     <section id="home"><Hero /></section>
-      <section id="about"><About /></section>
-      <section id="projects"><Projects /></section>
-      <section id="graphs"><Graphs /></section>
-    <Hero />
+    <section id="about"><About /></section>
+    <section id="graphs"><Graphs /></section>
+    <section id="projects"><Projects /></section>
+    
+    {/* <Hero />
     <About/>
     <Graphs/>
     <Projects/>
-    <CustomCursor/>
+    <CustomCursor/> */}
     
     
     
