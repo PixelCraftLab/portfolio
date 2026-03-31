@@ -15,6 +15,7 @@ const App = () => {
     <section id="about"><About /></section>
     <section id="graphs"><Graphs /></section>
     <section id="projects"><Projects /></section>
+    <CustomCursor/>
     
     {/* <Hero />
     <About/>
