@@ -31,7 +31,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between py-2 sm:py-0">
               <a className="text-[20px] font-bold text-neutral-400 hover:text-white" href="/">VISHAL</a>
                 <button onClick={()=> setIsOpen(!isOpen)} 
-                  className=" flex cursor-pointer text-neutral-400">
+                  className="flex md:hidden cursor-pointer text-neutral-400">
                 <img src={isOpen ? "/assets/close.svg" : "assets/menu.svg"} className="w-6 h-6 " alt="toggle menu" />
                 </button>
 
