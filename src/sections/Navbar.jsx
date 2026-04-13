@@ -1,60 +1,80 @@
 import { useState } from "react";
-import {motion} from "motion/react";
-import { Link } from "react-router";
+import { motion } from "motion/react";
+import GooeyNav from "@/components/GooeyNav";
 
-function Navigation(){
-  return <ul className="nav-ul">
-    <li className="nav-li">
-      
-      <a href="#home" className="cursor-pointer nav-link">Home</a>
-    </li>
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
 
-    <li className="nav-li">
-      <a href="#about" className="cursor-pointer nav-link">About</a>
-    </li>
-    
-    <li className="nav-li">
-      <a href="#projects" className="cursor-pointer nav-link">Projects</a>
-    </li>
+  const items = [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Projects", href: "#projects" },
+    { label: "Contact", href: "#contact" },
+  ];
 
-    <li className="nav-li">
-      <a className="cursor-pointer nav-link">Contact</a>
-    </li>
-    </ul>
-}
-
-const Navbar = () => {
-  const[isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
-        <div className="mx-auto c-space max-w-7xl">
-            <div className="flex items-center justify-between py-2 sm:py-0">
-              <a className="text-[20px] font-bold text-neutral-400 hover:text-white" href="/">VISHAL</a>
-                <button onClick={()=> setIsOpen(!isOpen)} 
-                  className="flex md:hidden cursor-pointer text-neutral-400">
-                <img src={isOpen ? "/assets/close.svg" : "assets/menu.svg"} className="w-6 h-6 " alt="toggle menu" />
-                </button>
+    <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg ">
+      <div className="mx-auto c-space max-w-7xl">
+        <div className="flex items-center justify-between py-2 sm:py-0">
 
-                <nav className="hidden sm:flex">
-                  <Navigation/>
-                </nav>
 
-            </div>
+          <a
+            className="text-[20px] font-bold text-neutral-400 hover:text-white"
+            href="/"
+          >
+            VISHAL
+          </a>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="flex md:hidden cursor-pointer text-neutral-400"
+          >
+            <img
+              src={isOpen ? "/assets/close.svg" : "/assets/menu.svg"}
+              className="w-6 h-6"
+              alt="toggle menu"
+            />
+          </button>
+
+          <nav className="hidden sm:flex">
+            <GooeyNav
+              items={items}
+              particleCount={19}
+              particleDistances={[90, 10]}
+              particleR={200}
+              initialActiveIndex={0}
+              animationTime={600}
+              timeVariance={700}
+              colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+            />
+          </nav>
+
         </div>
-        {isOpen && (
-        <motion.div 
-        className="block overflow-hidden text-center sm:hidden "
-        initial={{ opacity: 0, x: -10 }}
-        animate={{ opacity: 1, x: 0 }}
-        style={{maxHeight: "100vh"}}
-        transition={{ duration: 1 }}
+      </div>
+      {isOpen && (
+        <motion.div
+          className="block overflow-hidden text-center sm:hidden"
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          style={{ maxHeight: "100vh" }}
+          transition={{ duration: 1 }}
         >
           <nav className="pb-5">
-            <Navigation/>
-            </nav>
-        </motion.div>)}
+            <GooeyNav
+              items={items}
+              particleCount={15}
+              particleDistances={[70, 10]}
+              particleR={150}
+              initialActiveIndex={0}
+              animationTime={500}
+              timeVariance={500}
+              colors={[1, 2, 3, 4]}
+            />
+          </nav>
+        </motion.div>
+      )}
     </div>
   );
-};
+}
 
 export default Navbar;
