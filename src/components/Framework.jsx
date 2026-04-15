@@ -8,6 +8,8 @@ export function Frameworks() {
         "react",
         "visualstudiocode",
         "vitejs",
+        "tailwindcss",
+
         
         
     ]
