@@ -41,7 +41,7 @@ export const About = () => {
         const audio = audioRef.current;
 
         if (!audio) return;
- 
+
         if (isPlaying) {
             audio.pause();
             setIsPlaying(false);
@@ -56,7 +56,7 @@ export const About = () => {
 
 
 
-        <section className="relative c-space section-spacing"
+        <section className="z-2 relative c-space section-spacing"
             style={{
                 backgroundImage: "url(/assets/projects/StarsImg.png)",
                 backgroundSize: "cover",

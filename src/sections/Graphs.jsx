@@ -6,7 +6,7 @@ import LeetCodeStreekGraph from '../components/LeetCodeStreekGraph'
 const Graphs = () => {
   return (
     <div
-    className='ml-30 mb-10 mt-10 h-full w-full bg-cover bg-center relative  '
+    className='z-2 ml-30 mb-10 mt-10 h-full w-full bg-cover bg-center relative  '
     style={{
         backgroundImage:"url(assets/coding-pov.png)",
     }}

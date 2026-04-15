@@ -11,14 +11,10 @@ import Ribbons from "./components/Ribbons.jsx";
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl ">
-      <div className="fixed inset-0 z-50">
+      <div className="fixed inset-0 z-[1] ">
         <Ribbons
           baseThickness={19}
           colors={["#5227FF", "#06a597"]}
-          speedMultiplier={0.55}
-          maxAge={700}
-          enableFade
-          enableShaderEffect
         />
       </div>
       <Navbar />

@@ -84,7 +84,7 @@ const imageXSpring = useSpring(imageX, { damping: 50 });
         <motion.img
           src="/assets/projects/VishalImg.png"
           alt="My Image"
-          className="absolute bottom-5 left-190 right-0 w-72 z-10 object-contain lg:w-[500px] sm:w-52 md:w-72"
+          className="absolute bottom-5 left-190 right-0 w-72 object-contain lg:w-[500px] sm:w-52 md:w-72"
           style={{x:imageXSpring}}
 
         />
