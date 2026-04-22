@@ -1,36 +1,47 @@
 import { OrbitingCircles } from "./OrbitingCircles"
 
 export function Frameworks() {
-    const skills =[
-        "css3",
-        "html5",
-        "javascript",
-        "react",
-        "visualstudiocode",
-        "vitejs",
-        "tailwindcss",
+  const skills1 = [
+    "css3",
+    "html5",
+    "javascript",
+    "react",
+    "visualstudiocode",
+    "vitejs",
+    "tailwindcss",
+    
+  ]
 
-        
-        
-    ]
+  const skills2 = [
+    "NumPy",
+    "Pandas",
+    "OpeanCV",
+    "Kali",
+    
+  ]
+
+
+
+
+
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
-      <OrbitingCircles iconSize={40}>
-        {skills.map((skill,index)=>(<Icon key={index} src={`assets/logos/${skill}.svg`}/>))}
+      <OrbitingCircles iconSize={30} radius={160} >
+        {skills1.map((skill, index) => (<Icon key={index} src={`assets/logos/${skill}.svg`} />))}
         {/* <Icons.whatsapp />
         <Icons.notion />
         <Icons.openai />
         <Icons.googleDrive />
         <Icons.whatsapp /> */}
       </OrbitingCircles>
-      <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.reverse().map((skill,index)=>(<Icon key={index} src={`assets/logos/${skill}.svg`}/>))}
+      <OrbitingCircles iconSize={65} radius={100} reverse speed={2}>
+        {skills2.reverse().map((skill, index) => (<Icon key={index} src={`assets/logos/${skill}.svg`} />))}
         {/* <Icons.whatsapp />
         <Icons.notion />
         <Icons.openai />
         <Icons.googleDrive /> */}
       </OrbitingCircles>
-      
+
     </div>
   )
 }
@@ -165,6 +176,6 @@ export function Frameworks() {
 // }
 // export default Framework;
 
-const Icon = ({src})=>(
-    <img src={src} className="duriation-200 rounded-sm hover:scale-110"/>
+const Icon = ({ src }) => (
+  <img src={src} className="duriation-200 rounded-sm hover:scale-110" />
 );
