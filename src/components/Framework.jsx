@@ -17,6 +17,8 @@ export function Frameworks() {
     "Pandas",
     "OpeanCV",
     "Kali",
+    "MediaPipe",
+    "ReactBits",
     
   ]
 
