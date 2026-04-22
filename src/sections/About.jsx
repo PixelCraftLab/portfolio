@@ -136,7 +136,7 @@ export const About = () => {
                     <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
 
                         <p>
-                            a developer driven by curiosity, creativity, and a deep interest in building intelligent digital experiences.
+                            I enjoy exploring new technologies and turning ideas into real-world applications, especially in computer vision using OpenCV, ethical hacking and security testing using Kali Linux.
                         </p>
 
                         <p>
