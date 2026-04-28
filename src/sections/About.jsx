@@ -2,6 +2,7 @@ import CopyEmailButton from "../components/CopyEmailButton"
 import { Frameworks } from "../components/Framework"
 import { motion } from "framer-motion"
 import { useRef, useEffect, useState } from "react";
+import CircularGallery from '../components/CircularGallery'
 
 const cardVariants = {
     hidden: {
@@ -173,6 +174,17 @@ export const About = () => {
                     </figure>
 
                 </motion.div>
+
+
+
+                <div className="col-span-1 md:col-span-6 h-[600px] relative mb-35 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
+                    <CircularGallery  textColor="#ffffff"
+                        bend={0}
+                        borderRadius={0.05}
+                        scrollSpeed={0.7}
+                        scrollEase={0.05}
+                    />
+                </div>
 
 
                 {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/> */}
