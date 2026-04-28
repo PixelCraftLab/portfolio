@@ -338,8 +338,8 @@ class App {
       { image: "/assets/Gallery/Cam3.png", text: 'Shoot plan' },
       { image: "/assets/Gallery/SharkPoolMail.png", text: 'SharkPool Selection Mail' },
       { image: "/assets/Gallery/SharkPoolMeeting.png", text: 'SharkPool Meeting' },
-      
       { image: "/assets/Gallery/IdeaDiscussion.png", text: 'StartUp Disussion' },
+      { image: "/assets/Gallery/Construct.png", text: 'Construct Hackathon' },
       
     
     ];

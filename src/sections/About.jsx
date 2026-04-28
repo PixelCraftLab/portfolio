@@ -181,7 +181,7 @@ export const About = () => {
                     <CircularGallery  textColor="#ffffff"
                         bend={0}
                         borderRadius={0.05}
-                        scrollSpeed={0.7}
+                        scrollSpeed={1.5}
                         scrollEase={0.05}
                     />
                 </div>
