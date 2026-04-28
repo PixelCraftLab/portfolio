@@ -48,7 +48,7 @@ const  HeroText = () => {
         text-transparent bg-clip-text 
         bg-gradient-to-r from-white via-white to-yellow-100
         drop-shadow-[0_0_25px_rgba(255,255,0,0.9)]
-        scale-105 hover:animate-pulse"  >
+        scale-105 z-10"  >
         Welcome to My World!
         </motion.h1>
 
@@ -65,16 +65,16 @@ const  HeroText = () => {
         className="text-4xl font-bold 
         text-transparent bg-clip-text 
         bg-gradient-to-r from-white via-white to-blue-500
-        drop-shadow-[0_0_20px_rgba(255,255,255,0.9)]
-        tracking-wide">
+
+        tracking-wide z-10">
         Hi, there I'm Vishal Kumar Gowda
         </motion.h1>
 
-      <motion.div variants={item} className="flex flex-col items-start">
+      <motion.div variants={item} className="z-10 flex flex-col items-start">
         <motion.p 
           variants={item}
-          className="text-5xl font-medium text-transparent bg-clip-text 
-        bg-gradient-to-r from-neutral-200 via-white to-white" >
+          className=" text-5xl font-medium text-transparent bg-clip-text 
+        bg-gradient-to-r from-neutral-200 via-white to-white z-20" >
           A Developer <br/> Dedicated to Crafting
         </motion.p>
 
@@ -89,8 +89,8 @@ const  HeroText = () => {
             className="text-5xl font-extrabold 
             text-transparent bg-clip-text 
             bg-gradient-to-r from-cyan-400 via-blue-500 to-white
-            drop-shadow-[0_0_30px_rgba(0,255,255,0.9)]
-            animate-pulse">
+
+            animate-pulse z-20">
             <FlipWords />
         </motion.p>
 
@@ -104,7 +104,7 @@ const  HeroText = () => {
             variants={item}
             className="text-4xl font-bold 
             text-white
-            drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)]
+            z-10
             animate-pulse">
             Web Solutions!
             </motion.p>
