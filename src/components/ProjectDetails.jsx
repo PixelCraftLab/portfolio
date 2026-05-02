@@ -14,14 +14,14 @@ const ProjectDetails = ({
 
 }) => {
   return (
-    <div className='fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm'>
+    <div className='fixed inset-0 z-50 flex items-center justify-center backdrop-blur'>
         <motion.div className='relative max-w-2xl w-full max-h-[80vh] overflow-y-auto border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10'
         initial={{opacity:0, scale:0.5}}
         animate={{opacity:1, scale:1}}
         >
         <div className='p-5'>
-            <button onClick={closeModal} className='absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500 cursor-pointer'>
-                <img src='assets/close.svg' className='w-6 h-6' />
+            <button onClick={closeModal} className='position fixed absolute p-2 rounded-sm top-5 right-5 bg-neutral-600 hover:bg-black cursor-pointer'>
+                <img src='assets/close.svg' className=' w-6 h-6' />
             </button>
             <img src={image} alt={title} className='w-full rounded-t-2xl' />
         
