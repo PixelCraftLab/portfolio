@@ -1,9 +1,43 @@
 export const myProjects = [
   {
+    id: 5,
+    title: "Smart Store",
+    description:
+      "An AI-powered smart retail application designed to enhance online shopping through intelligent recommendations, automation, and seamless user experience.",
+    subDescription: [
+      "Developed Smart Store, an AI-driven e-commerce platform focused on personalized product recommendations and efficient user interaction.",
+      "Designed and implemented end-to-end system architecture, including frontend, backend, and API integrations for seamless functionality.",
+      "Integrated intelligent workflows to automate product suggestions, improving user engagement and decision-making.",
+      "Built scalable and responsive interfaces using modern web technologies, ensuring smooth performance across devices.",
+      "Focused on optimizing user experience by combining real-time data handling with intuitive UI/UX design."
+    ],
+    href: "https://shop-store-tidw.vercel.app/",
+    logo: "",
+    image: "/assets/projects/smartstore.png",
+    tags: [
+      {
+        id: 1,
+        name: "AI chatbot soon",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+      },
+      {
+        id: 3,
+        name: "React parent child components",
+      },
+      {
+        id: 4,
+        name: "Full stack soon",
+      }
+    ],
+  },
+  {
     id: 1,
     title: "LoginAuth",
     description:
-    " A lightweight authentication system implementing client-side login and session management using localStorage.",
+      " A lightweight authentication system implementing client-side login and session management using localStorage.",
 
     subDescription: [
       "Built a secure login and registration flow with form validation and error handling.",
@@ -37,7 +71,7 @@ export const myProjects = [
       },
     ],
   },
-  
+
   {
     id: 2,
     title: "TODO's App",
@@ -79,7 +113,7 @@ export const myProjects = [
     id: 3,
     title: "Tic Tac Toe",
     description:
-  "An interactive Tic-Tac-Toe game built with efficient game logic and responsive design.",
+      "An interactive Tic-Tac-Toe game built with efficient game logic and responsive design.",
 
     subDescription: [
       "Implemented core game logic to handle player turns, win detection, and draw conditions.",
@@ -117,7 +151,7 @@ export const myProjects = [
     id: 4,
     title: "WeatherSync",
     description:
-  "A real-time weather synchronization app that provides accurate forecasts and location-based weather updates.",
+      "A real-time weather synchronization app that provides accurate forecasts and location-based weather updates.",
 
     subDescription: [
       "Integrated a weather API to fetch real-time temperature, humidity, and forecast data.",
@@ -157,11 +191,11 @@ export const myProjects = [
     description:
       "A healthcare-focused application built for Microsoft Imagine Cup that advanced to the SharkPool investment round, showcasing real-world impact and strong business potential.",
     subDescription: [
-  "Led end-to-end development of MediConnect, a healthcare app built for Microsoft Imagine Cup that advanced to the SharkPool investment round.",
-  "Served as Technical and Product Lead in a two-member team, independently handling architecture, core development, workflow design, and system planning over 3 months.",
-  "Identified key gaps in the medical industry and translated them into actionable, market-ready solutions with strong ownership and analytical thinking.",
-  "Built and validated the MVP demonstrating real-world impact and business potential.",
-],
+      "Led end-to-end development of MediConnect, a healthcare app built for Microsoft Imagine Cup that advanced to the SharkPool investment round.",
+      "Served as Technical and Product Lead in a two-member team, independently handling architecture, core development, workflow design, and system planning over 3 months.",
+      "Identified key gaps in the medical industry and translated them into actionable, market-ready solutions with strong ownership and analytical thinking.",
+      "Built and validated the MVP demonstrating real-world impact and business potential.",
+    ],
     href: "https://my-imagine-cup.vercel.app/",
     logo: "",
     image: "/assets/projects/MediConnectimg.png",
@@ -169,21 +203,22 @@ export const myProjects = [
       {
         id: 1,
         name: "A startup initiative reflecting practical problem-solving skills and the ability to turn real-world challenges into scalable solutions.",
-        
+
       },
       {
         id: 2,
         name: "#Microsoft",
-        
+
       },
       {
         id: 3,
         name: "#Prompt Engineering Skills",
       }
-      
+
     ],
   },
   
+
 ];
 
 export const mySocials = [
