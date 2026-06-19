@@ -82,7 +82,7 @@ export const About = () => {
             {/* <div className="absolute inset-0 pointer-events-none rounded-lg border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 animate-border-rotate"></div> */}
 
             <motion.div
-                className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12"
+                className="grid grid-cols-1 gap-4 md:grid-cols-6  mt-12"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -95,8 +95,8 @@ export const About = () => {
                 }}
             >
 
-                <motion.div className="overflow-scroll relative grid-default-color grid-1 flex flex-col justify-end 
-                border-4 border-transparent via-black"
+                <motion.div className=" overflow-scroll relative grid-1 flex flex-col justify-end 
+                 !bg-transparent"
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -105,16 +105,10 @@ export const About = () => {
                 >
                     <img
                         src="assets/projects/SelfImg.png"
-                        className="w-40 mb-4"
+                        className="w-40 mb-90 ml-48 border rounded-4xl"
                     />
                     {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
-                    <p className=" text-gray-300">
-                        Im a software developer who enjoys turning ideas into real, usable products. I focus on building clean, scalable applications and solving problems that go beyond just writing code.
-                        Ive worked on projects involving realworld problem solving—always with an emphasis on performance, usability, and maintainability. Im particularly interested in building applications that combine good design with strong backend logic.
-                        What sets me apart is my approach: I dont just build features, I think about why they matter, how they scale, and how users experience them. I enjoy learning new technologies quickly and applying them in practical ways.
-                        I also gained hands-on experience leading a social impact startup project for about 3 to 4 months. I was responsible for designing the system, planning features, coordinating the development team, and making sure everything was done on time. This experience helped me improve my problem-solving, planning, and execution skills, which I am excited to bring to this in your project.
-                        Currently, Im focused on strengthening my skills.
-                    </p>
+                    
 
                     {/* <button
                 onClick={playIntro}
@@ -125,16 +119,24 @@ export const About = () => {
                 🔊 Hear About Me
                 </button> */}
                 </motion.div>
+
+
                 <motion.div
-                    className=" overflow-scroll grid-default-color grid-2
-                border-4 border-purple-800 via-blue-800
-                p-8 md:p-12 rounded-2xl"
+                    className="overflow-scroll grid-2
+                bg-transparent " 
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
                 >
-                    <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
+                    <p className=" text-gray-300 mt-25">
+                        I focus on building clean, scalable applications and solving problems that go beyond just writing code.
+                        Ive worked on projects involving realworld problem solving—always with an emphasis on performance, usability, and maintainability. Im particularly interested in building applications that combine good design with strong backend logic.
+                        What sets me apart is my approach: I dont just build features, I think about why they matter, how they scale, and how users experience them. I enjoy learning new technologies quickly and applying them in practical ways.
+                        I also gained hands-on experience leading a social impact startup project for about 6 months. I was responsible for designing the system, planning features, coordinating the development team, and making sure everything was done on time. This experience helped me improve my problem-solving, planning, and execution skills, which I am excited to bring to this in your project.
+                        I always focus on strengthening my skills.
+                    </p>
+                    {/* <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
 
                         <p>
                             I enjoy exploring new technologies and turning ideas into real-world applications, especially in computer vision using OpenCV, ethical hacking and security testing using Kali Linux.
@@ -145,9 +147,9 @@ export const About = () => {
                         </p>
 
 
-                    </div>
+                    </div> */}
                 </motion.div>
-                <motion.div className="border-4 border-blue-400 grid-default-color grid-3"
+                {/* <motion.div className="border-4 border-blue-400 grid-default-color grid-3"
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -173,12 +175,12 @@ export const About = () => {
 
                     </figure>
 
-                </motion.div>
+                </motion.div> */}
 
 
 
                 <div className="col-span-1 md:col-span-6 h-[600px] relative mb-35 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
-                    <CircularGallery  textColor="#ffffff"
+                    <CircularGallery textColor="#ffffff"
                         bend={0}
                         borderRadius={0.05}
                         scrollSpeed={1.5}
