@@ -3,6 +3,7 @@ import { Frameworks } from "../components/Framework"
 import { motion } from "framer-motion"
 import { useRef, useEffect, useState } from "react";
 import CircularGallery from '../components/CircularGallery'
+import { Link } from "lucide-react";
 
 const cardVariants = {
     hidden: {
@@ -107,18 +108,31 @@ export const About = () => {
                         src="assets/projects/SelfImg.png"
                         className="w-45 mb-30 ml-48 border rounded-4xl"
                     />
-                    <img
-                        src="public/assets/socials/linkedIn.svg"
-                        className="position relative w-15 cursor-pointer mb-10 ml-30 border rounded-4xl"
-                    />
-                    <img
-                        src="public/assets/socials/instagram.svg"
-                        className="position absolute w-15 cursor-pointer mb-10 ml-60 border rounded-4xl"
-                    />
-                    <img
-                        src="public/assets/socials/whatsApp.svg"
-                        className="position absolute w-15 cursor-pointer mb-10 ml-90 border rounded-4xl"
-                    />
+                    <div className="flex gap-6">
+                        <a href="https://www.linkedin.com/in/vishal-kumar-gowda-686729379/" target="_blank">
+                            <img
+                                src="/assets/socials/linkedIn.svg"
+                                className="w-15 ml-35 cursor-pointer border rounded-4xl"
+                                alt="LinkedIn"
+                            />
+                        </a>
+
+                        <a href="https://www.instagram.com/vishal_k_gowda_sk/" target="_blank">
+                            <img
+                                src="/assets/socials/instagram.svg"
+                                className="w-15 ml-5 cursor-pointer border rounded-4xl"
+                                alt="Instagram"
+                            />
+                        </a>
+
+                        <a href="https://wa.me/918088833875?text=Hi%20Vishal,%20I%20saw%20your%20portfolio." target="_blank">
+                            <img
+                                src="/assets/socials/whatsApp.svg"
+                                className="w-15 ml-5 cursor-pointer border rounded-4xl"
+                                alt="WhatsApp"
+                            />
+                        </a>
+                    </div>
                     {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
 
 
