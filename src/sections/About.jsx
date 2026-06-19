@@ -105,10 +105,22 @@ export const About = () => {
                 >
                     <img
                         src="assets/projects/SelfImg.png"
-                        className="w-40 mb-90 ml-48 border rounded-4xl"
+                        className="w-45 mb-30 ml-48 border rounded-4xl"
+                    />
+                    <img
+                        src="public/assets/socials/linkedIn.svg"
+                        className="position relative w-15 cursor-pointer mb-10 ml-30 border rounded-4xl"
+                    />
+                    <img
+                        src="public/assets/socials/instagram.svg"
+                        className="position absolute w-15 cursor-pointer mb-10 ml-60 border rounded-4xl"
+                    />
+                    <img
+                        src="public/assets/socials/whatsApp.svg"
+                        className="position absolute w-15 cursor-pointer mb-10 ml-90 border rounded-4xl"
                     />
                     {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
-                    
+
 
                     {/* <button
                 onClick={playIntro}
@@ -121,15 +133,17 @@ export const About = () => {
                 </motion.div>
 
 
+
+
                 <motion.div
                     className="overflow-scroll grid-2
-                bg-transparent " 
+                bg-transparent "
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
                 >
-                    <p className=" text-gray-300 mt-25">
+                    <p className=" text-gray-300 mt-5">
                         I focus on building clean, scalable applications and solving problems that go beyond just writing code.
                         Ive worked on projects involving realworld problem solving—always with an emphasis on performance, usability, and maintainability. Im particularly interested in building applications that combine good design with strong backend logic.
                         What sets me apart is my approach: I dont just build features, I think about why they matter, how they scale, and how users experience them. I enjoy learning new technologies quickly and applying them in practical ways.
@@ -179,7 +193,7 @@ export const About = () => {
 
 
 
-                <div className="col-span-1 md:col-span-6 h-[600px] relative mb-35 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
+                <div className="col-span-1 md:col-span-6 h-[600px] relative mb-10 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
                     <CircularGallery textColor="#ffffff"
                         bend={0}
                         borderRadius={0.05}
@@ -191,7 +205,7 @@ export const About = () => {
 
                 {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/> */}
 
-                <motion.div className="grid-special-color grid-4 "
+                <motion.div className="grid-special-color grid-4 mb-10"
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
