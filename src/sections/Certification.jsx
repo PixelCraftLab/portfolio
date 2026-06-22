@@ -85,23 +85,23 @@ const Certification = () => {
                 >
                     <Card>
                         <h2>#1</h2>
-                        <img src='public/assets/gallery/AntropicAgent.png'>
+                        <img src='public/assets/Certifications/AntropicAgent.png'>
 
                         </img>
                     </Card>
                     <Card>
                         <h2>#2</h2>
-                        <img src='public/assets/gallery/ClaudeCodeInAction.png'>
+                        <img src='public/assets/Certifications/ClaudeCodeInAction.png'>
                         </img>
                     </Card>
                     <Card>
                         <h2>#3</h2>
-                        <img src='public/assets/gallery/AntropicAPI.png'>
+                        <img src='public/assets/Certifications/AntropicAPI.png'>
                         </img>
                     </Card>
                     <Card>
                         <h2>#4</h2>
-                        <img src='public/assets/gallery/MCPAntropic.png'>
+                        <img src='public/assets/Certifications/MCPAntropic.png'>
                         </img>
                     </Card>
                 </CardSwap>
