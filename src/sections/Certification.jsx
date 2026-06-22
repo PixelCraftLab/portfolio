@@ -54,7 +54,7 @@ const Certification = () => {
         <div
             className='mr-40 mt-20 '
         >
-            
+
             <motion.h2 className="text-heading "
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 100 }}
@@ -63,10 +63,10 @@ const Certification = () => {
                 Certifications
             </motion.h2>
             <div className='h-4'>
-                
+
             </div>
-            <span 
-            className='ml-15'
+            <span
+                className='ml-15'
             >
                 The certificates i have investe time are not just compleate coures then get it,<br></br>
                 <span className='ml-15'></span>
@@ -85,23 +85,23 @@ const Certification = () => {
                 >
                     <Card>
                         <h2>#1</h2>
-                        <img src='public/assets/AntropicAgent.svg'>
+                        <img src='/assets/Certifications/AntropicAgent.png'>
 
                         </img>
                     </Card>
                     <Card>
                         <h2>#2</h2>
-                        <img src='public/assets/Certifications/ClaudeCodeInAction.png'>
+                        <img src='/assets/Certifications/ClaudeCodeInAction.png'>
                         </img>
                     </Card>
                     <Card>
                         <h2>#3</h2>
-                        <img src='public/assets/Certifications/AntropicAPI.png'>
+                        <img src='/assets/Certifications/AntropicAPI.png'>
                         </img>
                     </Card>
                     <Card>
                         <h2>#4</h2>
-                        <img src='public/assets/Certifications/MCPAntropic.png'>
+                        <img src='/assets/Certifications/MCPAntropic.png'>
                         </img>
                     </Card>
                 </CardSwap>
