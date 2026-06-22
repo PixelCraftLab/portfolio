@@ -5,6 +5,7 @@ import About from './sections/About.jsx';
 import Projects from './sections/Projects.jsx';
 import Graphs from './sections/Graphs.jsx';
 import SplashCursor from './components/SplashCursor.jsx';
+import Certification from './sections/Certification.jsx';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <section id="home"><Hero /></section>
       <section id="about"><About /></section>
       <section id="graphs"><Graphs /></section>
+      <section id="certifications"><Certification /></section>
       <section id="projects"><Projects /></section>
 
       {/* <CustomCursor/> */}
