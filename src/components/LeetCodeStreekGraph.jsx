@@ -17,7 +17,7 @@ const LeetCodeStreekGraph = () => {
             className='m-10  mt-5 mb-10 text-3xl hover:text-4xl transition-all duration-300 ease-out'
             
             >
-            LeetCode Streek
+            LeetCode
         </h2>
         </a>
         

@@ -106,13 +106,13 @@ export const About = () => {
                 >
                     <img
                         src="assets/projects/SelfImg.png"
-                        className="w-45 mb-30 ml-48 border rounded-4xl"
+                        className="w-45 mb-22 ml-48 border rounded-4xl"
                     />
                     <div className="flex gap-6">
                         <a href="https://www.linkedin.com/in/vishal-kumar-gowda-686729379/" target="_blank">
                             <img
                                 src="/assets/socials/linkedIn.svg"
-                                className="w-15 ml-35 cursor-pointer border rounded-4xl"
+                                className="w-10 ml-45 1 cursor-pointer border rounded-4xl"
                                 alt="LinkedIn"
                             />
                         </a>
@@ -120,7 +120,7 @@ export const About = () => {
                         <a href="https://www.instagram.com/vishal_k_gowda_sk/" target="_blank">
                             <img
                                 src="/assets/socials/instagram.svg"
-                                className="w-15 ml-5 cursor-pointer border rounded-4xl"
+                                className="w-10 ml-5 cursor-pointer border rounded-4xl"
                                 alt="Instagram"
                             />
                         </a>
@@ -128,7 +128,7 @@ export const About = () => {
                         <a href="https://wa.me/918088833875?text=Hi%20Vishal,%20I%20saw%20your%20portfolio." target="_blank">
                             <img
                                 src="/assets/socials/whatsApp.svg"
-                                className="w-15 ml-5 cursor-pointer border rounded-4xl"
+                                className="w-10 ml-5 cursor-pointer border rounded-4xl"
                                 alt="WhatsApp"
                             />
                         </a>
