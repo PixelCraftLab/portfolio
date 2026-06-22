@@ -85,7 +85,7 @@ const Certification = () => {
                 >
                     <Card>
                         <h2>#1</h2>
-                        <img src='public/assets/Certifications/AntropicAgent.png'>
+                        <img src='public/assets/AntropicAgent.svg'>
 
                         </img>
                     </Card>
