@@ -7,7 +7,7 @@ const LeetCodeStreekGraph = () => {
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: -40 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            viewport={{ always: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
     >
         <a 
         className='cursor-pointer' target='_blank'
