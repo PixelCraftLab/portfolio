@@ -36,7 +36,7 @@ const CardSwap = ({
   cardDistance = 30,
   verticalDistance = 40,
   delay = 5000,
-  pauseOnHover = true,
+  pauseOnHover = false,
   onCardClick,
   skewAmount = 9,
   easing = 'elastic',

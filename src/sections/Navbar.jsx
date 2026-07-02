@@ -8,9 +8,9 @@ function Navbar() {
   const items = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Cretifications", href: "#Cretifications" },
+    { label: "Cretifications", href: "#certifications" },
     { label: "Projects", href: "#projects" },
-    
+
     { label: "Contact", href: "#contact" },
   ];
 

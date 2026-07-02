@@ -66,14 +66,18 @@ const Certification = () => {
 
             </div>
             <span
-                className='ml-15'
+                className='ml-15 position relative'
             >
                 The certificates i have investe time are not just compleate coures then get it,<br></br>
                 <span className='ml-15'></span>
-                They are praticall to do.
+                Every certification here marks time invested in understanding a concept <br></br>
+                {/* not just passing an assessment. I pursue courses to strengthen the skills <br></br>
+                I use in real projects, explore new technologies, and build a deeper foundation. <br></br>
+                Each one reflects a step in continuous learning, backed by hands-on practice <br></br>
+                and curiosity rather than collecting credentials. */}
             </span>
 
-            <div
+            <div className='position absolute'
 
                 style={{ height: '600px', position: 'relative' }}>
                 <CardSwap
@@ -81,7 +85,8 @@ const Certification = () => {
                     cardDistance={50}
                     verticalDistance={70}
                     delay={4000}
-                    pauseOnHover
+                    pauseOnHover={true}
+
                 >
                     <Card>
                         <h2>#1</h2>
