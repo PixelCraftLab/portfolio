@@ -1,5 +1,51 @@
 export const myProjects = [
   {
+    id: 6,
+    title: "House Price Prediction",
+    description:
+      "An end-to-end Machine Learning application designed to predict house prices accurately using property features, featuring a complete ML pipeline and an interactive Streamlit interface for real-time price estimation.",
+    subDescription: [
+      "Developed an end-to-end Machine Learning application to accurately predict house prices using multiple property features, enabling real-time property value estimation.",
+      "Built a complete ML pipeline including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and deployment using Linear Regression.",
+      "Designed and deployed an interactive Streamlit web application that allows users to input property details and receive instant house price predictions through an intuitive interface.",
+      "Optimized model performance through feature selection, data cleaning, and hyperparameter tuning to improve prediction accuracy and reliability.",
+      "Followed industry-standard development practices, including modular code architecture, model serialization, version control, and reproducible workflows for seamless deployment and maintenance."
+    ],
+    href: "https://house-price-prediction-8lvyc5hyb2dorgh3kymcx2.streamlit.app/",
+    logo: "",
+    image: "/assets/projects/HousePricePrediction.png",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+      },
+      {
+        id: 2,
+        name: "Machine Learning",
+      },
+      {
+        id: 3,
+        name: "Streamlit",
+      },
+      {
+        id: 4,
+        name: "Pandas, NumPy",
+      },
+      {
+        id: 5,
+        name: "Data Analysis",
+      },
+      {
+        id: 6,
+        name: "end-to-end pipeline",
+      },
+      {
+        id: 7,
+        name: "ML algos",
+      }
+    ],
+  },
+  {
     id: 5,
     title: "Smart Store",
     description:
@@ -217,7 +263,7 @@ export const myProjects = [
 
     ],
   },
-  
+
 
 ];
 
