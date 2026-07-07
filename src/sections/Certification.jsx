@@ -128,13 +128,24 @@ import React from 'react'
 const Certification = () => {
     return (
         <div>
-            <motion.h2 className="text-heading "
+            <motion.h2 className="text-heading mb-10"
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 100 }}
                 transition={{ duration: 2.2, ease: "easeOut" }}
                 viewport={{ once: true, amount: 0.5 }}>
                 Certifications
             </motion.h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 place-items-center">
+                <img className="h-60 object-contain" src="/assets/Certifications/AntropicAgent.png" alt="Anthropic Agent" />
+                <img className="h-60 object-contain" src="/assets/Certifications/ClaudeCodeInAction.png" alt="Claude Code in Action" />
+                <img className="h-60 object-contain" src="/assets/Certifications/AntropicAPI.png" alt="Anthropic API" />
+                <img className="h-60 object-contain" src="/assets/Certifications/MCPAntropic.png" alt="MCP Anthropic" />
+            </div>
+
+
+
+
         </div>
     )
 }
