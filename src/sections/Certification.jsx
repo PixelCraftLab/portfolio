@@ -43,18 +43,91 @@
 //     "rotate(-5deg) translate(150px)"
 // ];
 
-import CardSwap, { Card } from '../components/CardSwap'
+
+//card slide motion code below 
+//
+//
+
+
+// import CardSwap, { Card } from '../components/CardSwap'
 import { motion } from "framer-motion"
 
+
+// import React from 'react'
+
+// const Certification = () => {
+//     return (
+//         <div
+//             className='mr-40 mt-20 '
+//         >
+
+//             <motion.h2 className="text-heading "
+//                 initial={{ opacity: 0, x: -100 }}
+//                 whileInView={{ opacity: 1, x: 100 }}
+//                 transition={{ duration: 2.2, ease: "easeOut" }}
+//                 viewport={{ once: true, amount: 0.5 }}>
+//                 Certifications
+//             </motion.h2>
+//             <div className='h-4'>
+
+//             </div>
+//             <span
+//                 className='ml-15 position relative'
+//             >
+//                 The certificates i have investe time are not just compleate coures then get it,<br></br>
+//                 <span className='ml-15'></span>
+//                 Every certification here marks time invested in understanding a concept <br></br>
+//                 {/* not just passing an assessment. I pursue courses to strengthen the skills <br></br>
+//                 I use in real projects, explore new technologies, and build a deeper foundation. <br></br>
+//                 Each one reflects a step in continuous learning, backed by hands-on practice <br></br>
+//                 and curiosity rather than collecting credentials. */}
+//             </span>
+
+//             <div className='position absolute'
+
+//                 style={{ height: '600px', position: 'relative' }}>
+//                 <CardSwap
+
+//                     cardDistance={50}
+//                     verticalDistance={70}
+//                     delay={4000}
+//                     pauseOnHover={true}
+
+//                 >
+//                     <Card>
+//                         <h2>#1</h2>
+//                         <img src='/assets/Certifications/AntropicAgent.png'>
+
+//                         </img>
+//                     </Card>
+//                     <Card>
+//                         <h2>#2</h2>
+//                         <img src='/assets/Certifications/ClaudeCodeInAction.png'>
+//                         </img>
+//                     </Card>
+//                     <Card>
+//                         <h2>#3</h2>
+//                         <img src='/assets/Certifications/AntropicAPI.png'>
+//                         </img>
+//                     </Card>
+//                     <Card>
+//                         <h2>#4</h2>
+//                         <img src='/assets/Certifications/MCPAntropic.png'>
+//                         </img>
+//                     </Card>
+//                 </CardSwap>
+//             </div>
+//         </div>
+//     )
+// }
+
+// export default Certification
 
 import React from 'react'
 
 const Certification = () => {
     return (
-        <div
-            className='mr-40 mt-20 '
-        >
-
+        <div>
             <motion.h2 className="text-heading "
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 100 }}
@@ -62,55 +135,6 @@ const Certification = () => {
                 viewport={{ once: true, amount: 0.5 }}>
                 Certifications
             </motion.h2>
-            <div className='h-4'>
-
-            </div>
-            <span
-                className='ml-15 position relative'
-            >
-                The certificates i have investe time are not just compleate coures then get it,<br></br>
-                <span className='ml-15'></span>
-                Every certification here marks time invested in understanding a concept <br></br>
-                {/* not just passing an assessment. I pursue courses to strengthen the skills <br></br>
-                I use in real projects, explore new technologies, and build a deeper foundation. <br></br>
-                Each one reflects a step in continuous learning, backed by hands-on practice <br></br>
-                and curiosity rather than collecting credentials. */}
-            </span>
-
-            <div className='position absolute'
-
-                style={{ height: '600px', position: 'relative' }}>
-                <CardSwap
-
-                    cardDistance={50}
-                    verticalDistance={70}
-                    delay={4000}
-                    pauseOnHover={true}
-
-                >
-                    <Card>
-                        <h2>#1</h2>
-                        <img src='/assets/Certifications/AntropicAgent.png'>
-
-                        </img>
-                    </Card>
-                    <Card>
-                        <h2>#2</h2>
-                        <img src='/assets/Certifications/ClaudeCodeInAction.png'>
-                        </img>
-                    </Card>
-                    <Card>
-                        <h2>#3</h2>
-                        <img src='/assets/Certifications/AntropicAPI.png'>
-                        </img>
-                    </Card>
-                    <Card>
-                        <h2>#4</h2>
-                        <img src='/assets/Certifications/MCPAntropic.png'>
-                        </img>
-                    </Card>
-                </CardSwap>
-            </div>
         </div>
     )
 }

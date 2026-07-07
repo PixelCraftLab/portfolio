@@ -11,7 +11,7 @@ const cardVariants = {
         y: 80,
     },
     visible: {
-        opacity: 1, 
+        opacity: 1,
         y: 0,
         transition: {
             duration: 1.2,
@@ -108,7 +108,7 @@ export const About = () => {
                         src="assets/projects/SelfImg.png"
                         className="w-45 mb-22 ml-48 border rounded-4xl"
                     />
-                    <div className="flex gap-6">
+                    <div className="flex mb-5 gap-6">
                         <a href="https://www.linkedin.com/in/vishal-kumar-gowda-686729379/" target="_blank">
                             <img
                                 src="/assets/socials/linkedIn.svg"
@@ -207,17 +207,39 @@ export const About = () => {
 
 
 
-                <div className="col-span-1 md:col-span-6 h-[600px] relative mb-10 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
-                    <CircularGallery textColor="#ffffff"
-                        bend={0}
-                        borderRadius={0.05}
-                        scrollSpeed={1.5}
-                        scrollEase={0.05}
-                    />
-                </div>
+
 
 
                 {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/> */}
+
+
+                <motion.div className="border-2 border-white grid-default-color grid-5
+             via-black
+            "
+                    variants={cardVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                >
+                    <div className=" z-10 w-[75%]">
+                        <p className="headText bold">Tech Stak:</p>
+                        <p className="text-neutral-400">
+                            <span className="text-neutral-200">Core CS:</span> Data Structures & Algorithms, Object-Oriented Design, Concurrency & Asynchronous Programming,
+                            Software Design<br></br>
+                            <span className="text-neutral-200">Languages:</span> Python, JavaScript, HTML, CSS<br></br>
+                            <span className="text-neutral-200">Frameworks & Libraries:</span> React, Node.js, Express.js, FastAPI, Pandas, NumPy, OpenCV, Matplotlib, Seaborn<br></br>
+                            <span className="text-neutral-200">Cloud & DevOps:</span> Azure, Docker, Git/GitHub, GitHub Actions, Virtualisation<br></br>
+                            <span className="text-neutral-200">AI / ML:</span> Machine Learning, LLMs, RAG, Hugging Face, OpenAI API, MCP<br></br>
+                            <span className="text-neutral-200">APIs & Tools:</span> REST APIs
+                        </p>
+
+                    </div>
+                    <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
+
+                        <Frameworks />
+                    </div>
+
+                </motion.div>
 
                 <motion.div className="grid-special-color grid-4 mb-10"
                     variants={cardVariants}
@@ -235,29 +257,16 @@ export const About = () => {
                     </div>
 
                 </motion.div>
-                <motion.div className="border-2 border-white grid-default-color grid-5
-             via-black
-            "
-                    variants={cardVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                >
-                    <div className=" z-10 w-[50%]">
-                        <p className="headText">Tech Stak</p>
-                        <p className="subtext">
-                            I leverage a modern, full-stack technology stack to build scalable, efficient, and production-ready applications. I focus on clean architecture, performance optimization, and maintainable code, enabling me to deliver robust solutions for frontend systems.
-                        </p>
-
-                    </div>
-                    <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
-
-                        <Frameworks />
-                    </div>
-
-                </motion.div>
 
             </motion.div>
+            <div className="col-span-1 md:col-span-6 h-[600px] relative mb-10 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
+                <CircularGallery textColor="#ffffff"
+                    bend={0}
+                    borderRadius={0.05}
+                    scrollSpeed={1.5}
+                    scrollEase={0.05}
+                />
+            </div>
 
 
 
@@ -265,7 +274,7 @@ export const About = () => {
 
 
 
-            <audio ref={audioRef} preload="auto" loop>
+            {/* <audio ref={audioRef} preload="auto" loop>
                 <source src="/audio/intro.mp3" type="audio/mpeg" />
             </audio>
             <button
@@ -276,7 +285,7 @@ export const About = () => {
             shadow-lg z-50 transition"
             >
                 {isPlaying ? "Pause Intro" : " Play Intro"}
-            </button>
+            </button> */}
         </section>
 
     )
