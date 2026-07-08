@@ -106,13 +106,13 @@ export const About = () => {
                 >
                     <img
                         src="assets/projects/SelfImg.png"
-                        className="w-45 mb-22 ml-48 border rounded-4xl"
+                        className="w-40 sm:w-44 md:w-48 mx-auto mb-8 border rounded-4xl"
                     />
-                    <div className="flex mb-5 gap-6">
+                    <div className="flex justify-center md:justify-start gap-5 mb-5">
                         <a href="https://www.linkedin.com/in/vishal-kumar-gowda-686729379/" target="_blank">
                             <img
                                 src="/assets/socials/linkedIn.svg"
-                                className="w-10 ml-45 1 cursor-pointer border rounded-4xl"
+                                className="w-10 sm:ml-50  cursor-pointer border rounded-4xl"
                                 alt="LinkedIn"
                             />
                         </a>
@@ -120,7 +120,7 @@ export const About = () => {
                         <a href="https://www.instagram.com/vishal_k_gowda_sk/" target="_blank">
                             <img
                                 src="/assets/socials/instagram.svg"
-                                className="w-10 ml-5 cursor-pointer border rounded-4xl"
+                                className="w-10 cursor-pointer border rounded-4xl"
                                 alt="Instagram"
                             />
                         </a>
@@ -128,7 +128,7 @@ export const About = () => {
                         <a href="https://wa.me/918088833875?text=Hi%20Vishal,%20I%20saw%20your%20portfolio." target="_blank">
                             <img
                                 src="/assets/socials/whatsApp.svg"
-                                className="w-10 ml-5 cursor-pointer border rounded-4xl"
+                                className="w-10 cursor-pointer border rounded-4xl"
                                 alt="WhatsApp"
                             />
                         </a>
@@ -222,7 +222,7 @@ export const About = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <div className=" z-10 w-[75%]">
-                        <p className="headText bold">Tech Stak:</p>
+                        <p className="headText bold">Tech Stak:</p> 
                         <p className="text-neutral-400">
                             <span className="text-neutral-200">Core CS:</span> Data Structures & Algorithms, Object-Oriented Design, Concurrency & Asynchronous Programming,
                             Software Design<br></br>
