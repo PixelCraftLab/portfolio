@@ -222,7 +222,7 @@ export const About = () => {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <div className=" z-10 w-[75%]">
-                        <p className="headText bold">Tech Stak:</p> 
+                        <p className="headText text-lg bold">Tech Stak:</p> 
                         <p className="text-neutral-400">
                             <span className="text-neutral-200">Core CS:</span> Data Structures & Algorithms, Object-Oriented Design, Concurrency & Asynchronous Programming,
                             Software Design<br></br>

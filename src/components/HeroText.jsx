@@ -106,7 +106,7 @@ const  HeroText = () => {
             text-white
             z-10
             animate-pulse">
-            Web Solutions!
+            Solutions!
             </motion.p>
       </motion.div>
     </motion.div>
