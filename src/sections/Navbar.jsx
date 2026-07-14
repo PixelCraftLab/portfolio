@@ -11,7 +11,7 @@ function Navbar() {
     { label: "Cretifications", href: "#certifications" },
     { label: "Projects", href: "#projects" },
 
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "#about" },
   ];
 
   return (

@@ -46,8 +46,7 @@ const  HeroText = () => {
         variants={item}
         className="text-7xl font-extrabold mb-5 mt-25 
         text-transparent bg-clip-text 
-        bg-gradient-to-r from-white via-white to-yellow-100
-        drop-shadow-[0_0_25px_rgba(255,255,0,0.9)]
+        bg-gradient-to-r from-white via-blue-200 to-blue-500
         scale-105 z-10"  >
         Welcome to My World!
         </motion.h1>
@@ -64,10 +63,10 @@ const  HeroText = () => {
         variants={item}
         className="text-4xl font-bold 
         text-transparent bg-clip-text 
-        bg-gradient-to-r from-white via-white to-blue-500
+        bg-gradient-to-r from-white via-blue-200 to-blue-500
 
         tracking-wide z-10">
-        Hi, there I'm Vishal Kumar Gowda
+        Hey there, I'm Vishal Kumar Gowda
         </motion.h1>
 
       <motion.div variants={item} className="z-10 flex flex-col items-start">

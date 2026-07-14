@@ -23,6 +23,7 @@ const App = () => {
       <section id="certifications"><Certification /></section>
       <section id="projects"><Projects /></section>
 
+
       {/* <CustomCursor/> */}
 
       {/* <Hero />

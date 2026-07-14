@@ -27,7 +27,7 @@ const imageXSpring = useSpring(imageX, { damping: 50 });
 
         
         <div
-          className="absolute inset-0 w-full h-screen -z-50"
+          className="absolute inset-0 w-full h-screen -z-50 animate-pulse"
           style={{
             backgroundImage: "url(/assets/sky.jpg)",
             backgroundPosition: "bottom",

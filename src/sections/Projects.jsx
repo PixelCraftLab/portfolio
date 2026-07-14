@@ -16,7 +16,6 @@ const Projects = () => {
 
 
 
-
   const [preview, setPreview]= useState(null);
 
   return (

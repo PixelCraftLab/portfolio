@@ -57,86 +57,86 @@ export const About = () => {
 
 
 
+        <section className="z-2 relative c-space section-spacing">
+            <section
+                style={{
+                    backgroundImage: "url(/assets/projects/StarsImg.png)",
+                    backgroundSize: "cover",
+                }}
+            >
 
-        <section className="z-2 relative c-space section-spacing"
-            style={{
-                backgroundImage: "url(/assets/projects/StarsImg.png)",
-                backgroundSize: "cover",
-            }}
-        >
-
-            {/* <img
+                {/* <img
             src="/assets/projects/StarsImg.png"   
             alt="stars"
             className="absolute inset-0 w-full h-170 object-cover z-10 animate-pulse"
         /> */}
 
-            <motion.h2
-                className="text-heading "
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 100 }}
-                transition={{ duration: 2.2, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.5 }}
-            >
-                About Me
-            </motion.h2>
-            {/* <div className="absolute inset-0 pointer-events-none rounded-lg border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 animate-border-rotate"></div> */}
+                <motion.h2
+                    className="text-heading "
+                    initial={{ opacity: 0, x: -100 }}
+                    whileInView={{ opacity: 1, x: 100 }}
+                    transition={{ duration: 2.2, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.5 }}
+                >
+                    About Me
+                </motion.h2>
+                {/* <div className="absolute inset-0 pointer-events-none rounded-lg border-4 border-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-pink-500 animate-border-rotate"></div> */}
 
-            <motion.div
-                className="grid grid-cols-1 gap-4 md:grid-cols-6  mt-12"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={{
-                    visible: {
-                        transition: {
-                            staggerChildren: 1.2
-                        }
-                    }
-                }}
-            >
-
-                <motion.div className=" overflow-scroll relative grid-1 flex flex-col justify-end 
-                 !bg-transparent"
-                    variants={cardVariants}
+                <motion.div
+                    className="grid grid-cols-1 gap-4 md:grid-cols-6  mt-12"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-
+                    viewport={{ once: true }}
+                    variants={{
+                        visible: {
+                            transition: {
+                                staggerChildren: 1.2
+                            }
+                        }
+                    }}
                 >
-                    <img
-                        src="assets/projects/SelfImg.png"
-                        className="w-40 sm:w-44 md:w-48 mx-auto mb-8 border rounded-4xl"
-                    />
-                    <div className="flex justify-center md:justify-start gap-5 mb-5">
-                        <a href="https://www.linkedin.com/in/vishal-kumar-gowda-686729379/" target="_blank">
-                            <img
-                                src="/assets/socials/linkedIn.svg"
-                                className="w-10 sm:ml-50  cursor-pointer border rounded-4xl"
-                                alt="LinkedIn"
-                            />
-                        </a>
 
-                        <a href="https://www.instagram.com/vishal_k_gowda_sk/" target="_blank">
-                            <img
-                                src="/assets/socials/instagram.svg"
-                                className="w-10 cursor-pointer border rounded-4xl"
-                                alt="Instagram"
-                            />
-                        </a>
+                    <motion.div className=" overflow-scroll relative grid-1 flex flex-col justify-end 
+                 !bg-transparent"
+                        variants={cardVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
 
-                        <a href="https://wa.me/918088833875?text=Hi%20Vishal,%20I%20saw%20your%20portfolio." target="_blank">
-                            <img
-                                src="/assets/socials/whatsApp.svg"
-                                className="w-10 cursor-pointer border rounded-4xl"
-                                alt="WhatsApp"
-                            />
-                        </a>
-                    </div>
-                    {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
+                    >
+                        <img
+                            src="assets/projects/SelfImg.png"
+                            className="w-40 sm:w-44 md:w-48 mx-auto mb-8 border rounded-4xl"
+                        />
+                        <div className="flex justify-center md:justify-start gap-5 mb-5">
+                            <a href="https://www.linkedin.com/in/vishal-kumar-gowda-686729379/" target="_blank">
+                                <img
+                                    src="/assets/socials/linkedIn.svg"
+                                    className="w-10 sm:ml-50  cursor-pointer border rounded-4xl"
+                                    alt="LinkedIn"
+                                />
+                            </a>
+
+                            <a href="https://www.instagram.com/vishal_k_gowda_sk/" target="_blank">
+                                <img
+                                    src="/assets/socials/instagram.svg"
+                                    className="w-10 cursor-pointer border rounded-4xl"
+                                    alt="Instagram"
+                                />
+                            </a>
+
+                            <a href="https://wa.me/918088833875?text=Hi%20Vishal,%20I%20saw%20your%20portfolio." target="_blank">
+                                <img
+                                    src="/assets/socials/whatsApp.svg"
+                                    className="w-10 cursor-pointer border rounded-4xl"
+                                    alt="WhatsApp"
+                                />
+                            </a>
+                        </div>
+                        {/* <p className="headtext z-1">Hi, I am Vishal</p> */}
 
 
-                    {/* <button
+                        {/* <button
                 onClick={playIntro}
                 className="mt-4 px-4 py-2 bg-purple-600 hover:bg-purple-700 
                             text-white rounded-lg transition duration-300 
@@ -144,27 +144,27 @@ export const About = () => {
                 >
                 🔊 Hear About Me
                 </button> */}
-                </motion.div>
+                    </motion.div>
 
 
 
 
-                <motion.div
-                    className="overflow-scroll grid-2
+                    <motion.div
+                        className="overflow-scroll grid-2
                 bg-transparent "
-                    variants={cardVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                >
-                    <p className=" text-gray-300 mt-5">
-                        I focus on building clean, scalable applications and solving problems that go beyond just writing code.
-                        Ive worked on projects involving realworld problem solving—always with an emphasis on performance, usability, and maintainability. Im particularly interested in building applications that combine good design with strong backend logic.
-                        What sets me apart is my approach: I dont just build features, I think about why they matter, how they scale, and how users experience them. I enjoy learning new technologies quickly and applying them in practical ways.
-                        I also gained hands-on experience leading a social impact startup project for about 6 months. I was responsible for designing the system, planning features, coordinating the development team, and making sure everything was done on time. This experience helped me improve my problem-solving, planning, and execution skills, which I am excited to bring to this in your project.
-                        I always focus on strengthening my skills.
-                    </p>
-                    {/* <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
+                        variants={cardVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+                        <p className=" text-gray-300 mt-5">
+                            I focus on building clean, scalable applications and solving problems that go beyond just writing code.
+                            Ive worked on projects involving realworld problem solving—always with an emphasis on performance, usability, and maintainability. Im particularly interested in building applications that combine good design with strong backend logic.
+                            What sets me apart is my approach: I dont just build features, I think about why they matter, how they scale, and how users experience them. I enjoy learning new technologies quickly and applying them in practical ways.
+                            I also gained hands-on experience leading a social impact startup project for about 6 months. I was responsible for designing the system, planning features, coordinating the development team, and making sure everything was done on time. This experience helped me improve my problem-solving, planning, and execution skills, which I am excited to bring to this in your project.
+                            I always focus on strengthening my skills.
+                        </p>
+                        {/* <div className=" overflow-scroll flex flex-col gap-6 text-lg md:text-xl text-gray-300 leading-relaxed">
 
                         <p>
                             I enjoy exploring new technologies and turning ideas into real-world applications, especially in computer vision using OpenCV, ethical hacking and security testing using Kali Linux.
@@ -176,8 +176,8 @@ export const About = () => {
 
 
                     </div> */}
-                </motion.div>
-                {/* <motion.div className="border-4 border-blue-400 grid-default-color grid-3"
+                    </motion.div>
+                    {/* <motion.div className="border-4 border-blue-400 grid-default-color grid-3"
                     variants={cardVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -210,63 +210,63 @@ export const About = () => {
 
 
 
-                {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/> */}
+                    {/* <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent mt-12 h-[1px] w-full"/> */}
 
 
-                <motion.div className="border-2 border-white grid-default-color grid-5
+                    <motion.div className="border-2 border-white grid-default-color grid-5
              via-black
             "
-                    variants={cardVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                >
-                    <div className=" z-10 w-[75%]">
-                        <p className="headText text-lg bold">Tech Stak:</p> 
-                        <p className="text-neutral-400">
-                            <span className="text-neutral-200">Core CS:</span> Data Structures & Algorithms, Object-Oriented Design, Concurrency & Asynchronous Programming,
-                            Software Design<br></br>
-                            <span className="text-neutral-200">Languages:</span> Python, JavaScript, HTML, CSS<br></br>
-                            <span className="text-neutral-200">Frameworks & Libraries:</span> React, Node.js, Express.js, FastAPI, Pandas, NumPy, OpenCV, Matplotlib, Seaborn<br></br>
-                            <span className="text-neutral-200">Cloud & DevOps:</span> Azure, Docker, Git/GitHub, GitHub Actions, Virtualisation<br></br>
-                            <span className="text-neutral-200">AI / ML:</span> Machine Learning, LLMs, RAG, Hugging Face, OpenAI API, MCP<br></br>
-                            <span className="text-neutral-200">APIs & Tools:</span> REST APIs
-                        </p>
+                        variants={cardVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+                        <div className=" z-10 w-[75%]">
+                            <p className="headText text-lg bold">Tech Stak:</p>
+                            <p className="text-neutral-400">
+                                <span className="text-neutral-200">Core CS:</span> Data Structures & Algorithms, Object-Oriented Design, Concurrency & Asynchronous Programming,
+                                Software Design<br></br>
+                                <span className="text-neutral-200">Languages:</span> Python, JavaScript, HTML, CSS<br></br>
+                                <span className="text-neutral-200">Frameworks & Libraries:</span> React, Node.js, Express.js, FastAPI, Pandas, NumPy, OpenCV, Matplotlib, Seaborn<br></br>
+                                <span className="text-neutral-200">Cloud & DevOps:</span> Azure, Docker, Git/GitHub, GitHub Actions, Virtualisation<br></br>
+                                <span className="text-neutral-200">AI / ML:</span> Machine Learning, LLMs, RAG, Hugging Face, OpenAI API, MCP<br></br>
+                                <span className="text-neutral-200">APIs & Tools:</span> REST APIs
+                            </p>
 
-                    </div>
-                    <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
+                        </div>
+                        <div className="absolute inset-y-0 md:inset-y-9. w-full h-full start-[50%] md:scale-125">
 
-                        <Frameworks />
-                    </div>
+                            <Frameworks />
+                        </div>
+
+                    </motion.div>
+
+                    <motion.div className="grid-special-color grid-4 mb-10"
+                        variants={cardVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+
+
+
+                        <div className="flex flex-col items-center justify-center gap-4 size-full">
+                            <p className="text-center headtext">Do you want to start a project together?</p>
+                            <CopyEmailButton />
+
+                        </div>
+
+                    </motion.div>
 
                 </motion.div>
-
-                <motion.div className="grid-special-color grid-4 mb-10"
-                    variants={cardVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                >
-
-
-
-                    <div className="flex flex-col items-center justify-center gap-4 size-full">
-                        <p className="text-center headtext">Do you want to start a project together?</p>
-                        <CopyEmailButton />
-
-                    </div>
-
-                </motion.div>
-
-            </motion.div>
-            <div className="col-span-1 md:col-span-6 h-[600px] relative mb-10 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
-                <CircularGallery textColor="#ffffff"
-                    bend={0}
-                    borderRadius={0.05}
-                    scrollSpeed={1.5}
-                    scrollEase={0.05}
-                />
-            </div>
+                <div className="col-span-1 md:col-span-6 h-[600px] relative mb-10 " style={{ height: '300px', width: '1155px', position: 'relative' }}>
+                    <CircularGallery textColor="#ffffff"
+                        bend={0}
+                        borderRadius={0.05}
+                        scrollSpeed={1.5}
+                        scrollEase={0.05}
+                    />
+                </div>
 
 
 
@@ -274,7 +274,7 @@ export const About = () => {
 
 
 
-            {/* <audio ref={audioRef} preload="auto" loop>
+                {/* <audio ref={audioRef} preload="auto" loop>
                 <source src="/audio/intro.mp3" type="audio/mpeg" />
             </audio>
             <button
@@ -286,6 +286,7 @@ export const About = () => {
             >
                 {isPlaying ? "Pause Intro" : " Play Intro"}
             </button> */}
+            </section>
         </section>
 
     )

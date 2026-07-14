@@ -122,6 +122,10 @@ export const myProjects = [
       {
         id: 4,
         name: "Full stack soon",
+      },
+      {
+        id: 4,
+        name: "Work in progress",
       }
     ],
   },
