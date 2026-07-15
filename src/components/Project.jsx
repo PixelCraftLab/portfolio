@@ -44,6 +44,7 @@ const Project = ({ title, description, subDescription, href, image, tags, setPre
         tags={tags}
         href={href}
         closeModal={() => setIsHidden(false)}
+        
       />)}
     </>
   )
