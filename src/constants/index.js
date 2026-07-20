@@ -1,15 +1,17 @@
 export const myProjects = [
   {
     id: 7,
-    title: "Custom RAG - AI Document Assistant",
+    title: "Custom RAG – AI Document Assistant (Production-Deployed Internship Project)",
     description:
-      "A production-ready Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and ask context-aware questions, combining semantic search with Large Language Models for grounded and accurate document-based responses.",
+      "A production-ready Retrieval-Augmented Generation (RAG) application developed during my internship and deployed for real-world business use cases. The system enables users to upload PDF documents and ask context-aware questions, combining semantic search with Large Language Models for grounded and accurate document-based responses. Continuously refined and optimized based on production requirements while fulfilling the CEO's objective of building a zero-cost AI solution without relying on paid subscription-based services.",
+
     subDescription: [
-      "Built a full-stack RAG application using React, FastAPI, LangChain, ChromaDB, and Groq Llama 3.3 70B, enabling users to upload PDFs and interact with their documents through natural language conversations.",
-      "Implemented a complete document ingestion pipeline that loads PDFs, performs intelligent text chunking using RecursiveCharacterTextSplitter, generates embeddings with BAAI/bge-small-en-v1.5, and stores vectors persistently in ChromaDB for efficient semantic retrieval.",
-      "Designed a grounded AI workflow that retrieves the top-k most relevant document chunks using vector similarity search before passing them to the LLM, ensuring responses are generated strictly from the uploaded document without hallucinations.",
-      "Developed a scalable and modular backend architecture following the Single Responsibility Principle (SRP), with separate modules for document loading, chunking, embeddings, retrieval, prompt engineering, vector database management, and API endpoints for maintainability and future scalability.",
-      "Engineered secure document management features including document upload, deletion, persistent vector storage, metadata tracking, and RESTful APIs, while building an intuitive React frontend for seamless document interaction and real-time AI-powered question answering."
+      "Built a full-stack production-ready RAG application using React, FastAPI, LangChain, ChromaDB, and Groq Llama 3.3 70B, enabling users to upload PDFs and interact with their documents through natural language conversations. Successfully deployed and continuously enhanced based on real-world production feedback and evolving business requirements.",
+      "Implemented a complete document ingestion pipeline that loads PDFs, performs intelligent text chunking using RecursiveCharacterTextSplitter, generates embeddings with BAAI/bge-small-en-v1.5, and stores vectors persistently in ChromaDB for efficient semantic retrieval, ensuring scalable and reliable production performance.",
+      "Designed a grounded AI workflow that retrieves the top-k most relevant document chunks using vector similarity search before passing them to the LLM, ensuring responses are generated strictly from the uploaded document without hallucinations while optimizing retrieval quality for real-world document querying.",
+      "Developed a scalable and modular backend architecture following the Single Responsibility Principle (SRP), with separate modules for document loading, chunking, embeddings, retrieval, prompt engineering, vector database management, and API endpoints for maintainability, future scalability, and easier production maintenance.",
+      "Engineered secure document management features including document upload, deletion, persistent vector storage, metadata tracking, and RESTful APIs, while building an intuitive React frontend for seamless document interaction and real-time AI-powered question answering.",
+      "Successfully accomplished the CEO's requirement of delivering a production-grade AI Document Assistant at zero software licensing cost by leveraging open-source technologies and free-tier AI services, eliminating the need for paid LLM or vector database subscriptions while maintaining production-quality performance."
     ],
     href: "https://github.com/PixelCraftLab/custom-RAG",
     logo: "",
