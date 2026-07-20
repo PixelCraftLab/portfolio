@@ -1,47 +1,59 @@
 export const myProjects = [
   {
-    id: 6,
-    title: "Custom RAG Application",
+    id: 7,
+    title: "Custom RAG - AI Document Assistant",
     description:
-      "",
+      "A production-ready Retrieval-Augmented Generation (RAG) application that enables users to upload PDF documents and ask context-aware questions, combining semantic search with Large Language Models for grounded and accurate document-based responses.",
     subDescription: [
-      // "Developed an end-to-end Machine Learning application to accurately predict house prices using multiple property features, enabling real-time property value estimation.",
-      // "Built a complete ML pipeline including data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and deployment using Linear Regression.",
-      // "Designed and deployed an interactive Streamlit web application that allows users to input property details and receive instant house price predictions through an intuitive interface.",
-      // "Optimized model performance through feature selection, data cleaning, and hyperparameter tuning to improve prediction accuracy and reliability.",
-      // "Followed industry-standard development practices, including modular code architecture, model serialization, version control, and reproducible workflows for seamless deployment and maintenance."
+      "Built a full-stack RAG application using React, FastAPI, LangChain, ChromaDB, and Groq Llama 3.3 70B, enabling users to upload PDFs and interact with their documents through natural language conversations.",
+      "Implemented a complete document ingestion pipeline that loads PDFs, performs intelligent text chunking using RecursiveCharacterTextSplitter, generates embeddings with BAAI/bge-small-en-v1.5, and stores vectors persistently in ChromaDB for efficient semantic retrieval.",
+      "Designed a grounded AI workflow that retrieves the top-k most relevant document chunks using vector similarity search before passing them to the LLM, ensuring responses are generated strictly from the uploaded document without hallucinations.",
+      "Developed a scalable and modular backend architecture following the Single Responsibility Principle (SRP), with separate modules for document loading, chunking, embeddings, retrieval, prompt engineering, vector database management, and API endpoints for maintainability and future scalability.",
+      "Engineered secure document management features including document upload, deletion, persistent vector storage, metadata tracking, and RESTful APIs, while building an intuitive React frontend for seamless document interaction and real-time AI-powered question answering."
     ],
-    href: "/",
+    href: "https://github.com/PixelCraftLab/custom-RAG",
     logo: "",
-    image: "",
+    image: "/assets/projects/CustomRAG.png",
     tags: [
       {
         id: 1,
-        name: "Work in progress",
+        name: "Python",
       },
       {
         id: 2,
-        name: "Comming soon",
+        name: "FastAPI",
       },
       {
         id: 3,
-        name: "",
+        name: "React",
       },
       {
         id: 4,
-        name: "",
+        name: "LangChain",
       },
       {
         id: 5,
-        name: "",
+        name: "ChromaDB",
       },
       {
         id: 6,
-        name: "",
+        name: "RAG Pipeline",
       },
       {
         id: 7,
-        name: "",
+        name: "LLM",
+      },
+      {
+        id: 8,
+        name: "Groq API",
+      },
+      {
+        id: 9,
+        name: "Hugging Face",
+      },
+      {
+        id: 10,
+        name: "Vector Database",
       }
     ],
   },

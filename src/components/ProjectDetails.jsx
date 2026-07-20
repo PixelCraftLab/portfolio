@@ -33,10 +33,10 @@ const ProjectDetails = ({
                     <img src={image} alt={title} className='w-full rounded-t-2xl' />
 
 
-                    <h5 className='mb-2 text-2xl font-bold text-white'>{title}</h5>
+                    <h5 className='mb-2 text-2xl font-bold text-amber-400'>{title}</h5>
 
-                    <p className='mb-3 font-normal text-neutral-400'>{description}</p>
-                    <p className='mb-3 font-normal text-neutral-400'>{subDescription}</p>
+                    <p className='mb-3 font-normal text-amber-100'>{description}</p>
+                    <p className='mb-3 font-normal text-amber-100'>{subDescription}</p>
 
 
 
